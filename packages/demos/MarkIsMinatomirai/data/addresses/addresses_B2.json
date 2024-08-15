@@ -1,0 +1,22 @@
+{
+  "AB2-Facilities-Elevator-1": { "x": 470.0, "y": -115.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-2": { "x": 470.0, "y": -125.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-3": { "x": 470.0, "y": -135.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-4": { "x": 105.0, "y": -80.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-5": { "x": 95.0, "y": -80.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-6": { "x": 85.0, "y": -80.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-7": { "x": -305.0, "y": 45.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-8": { "x": -305.0, "y": 55.0, "w": 7.1 },
+  "AB2-Facilities-Elevator-9": { "x": -305.0, "y": 65.0, "w": 7.1 },
+  "AB2-Facilities-EscalatorDown-1": { "x": 400.0, "y": -65.0, "w": 7.1 },
+  "AB2-Facilities-EscalatorUp-1": { "x": 395.0, "y": -25.0, "w": 7.1 },
+  "AB2-Facilities-EscalatorUp-2": { "x": 275.0, "y": -20.0, "w": 7.1 },
+  "AB2-Facilities-Toilets-1": { "x": 120.0, "y": -45.0, "w": 7.1 },
+  "AB2-Shops-1": { "x": 355.0, "y": -115.0, "w": 56.001 },
+  "AB2-Shops-2": { "x": 255.0, "y": -115.0, "w": 96.001 },
+  "AB2-Shops-3": { "x": 215.0, "y": 55.0, "w": 120.002 },
+  "AB2-Shops-4": { "x": 375.0, "y": 50.0, "w": 84.001 },
+  "AB2-Shops-5": { "x": 450.0, "y": -60.0, "w": 16.0 },
+  "AB2-Shops-6": { "x": 450.0, "y": -80.0, "w": 16.0 },
+  "AB2-Shops-7": { "x": 450.0, "y": -100.0, "w": 16.0 }
+}

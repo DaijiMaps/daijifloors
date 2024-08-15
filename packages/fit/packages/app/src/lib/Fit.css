@@ -1,0 +1,14 @@
+.result > svg,
+.fit > svg {
+  opacity: 1;
+}
+.result > svg > path,
+.fit > svg > path {
+  opacity: 1;
+  fill: green;
+}
+.result > svg > text > tspan,
+.fit > svg > text > tspan {
+  opacity: 1;
+  fill: white;
+}

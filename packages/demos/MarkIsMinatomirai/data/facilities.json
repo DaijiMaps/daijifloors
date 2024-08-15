@@ -1,0 +1,90 @@
+{
+  "biLinks": {
+    "1": [
+      "AB4-Facilities-Elevator-1",
+      "AB2-Facilities-Elevator-1",
+      "AB1-Facilities-Elevator-4",
+      "A1F-Facilities-Elevator-9",
+      "A2F-Facilities-Elevator-4",
+      "A3F-Facilities-Elevator-4",
+      "A4F-Facilities-Elevator-4"
+    ],
+    "2": [
+      "AB4-Facilities-Elevator-2",
+      "AB2-Facilities-Elevator-2",
+      "AB1-Facilities-Elevator-5",
+      "A1F-Facilities-Elevator-10",
+      "A2F-Facilities-Elevator-5",
+      "A3F-Facilities-Elevator-5",
+      "A4F-Facilities-Elevator-5"
+    ],
+    "3": [
+      "AB4-Facilities-Elevator-3",
+      "AB2-Facilities-Elevator-3",
+      "AB1-Facilities-Elevator-6",
+      "AGL-Facilities-Elevator-4",
+      "A1F-Facilities-Elevator-2",
+      "A2F-Facilities-Elevator-6",
+      "A3F-Facilities-Elevator-6",
+      "A4F-Facilities-Elevator-6"
+    ],
+    "4": [
+      "AB4-Facilities-Elevator-4",
+      "AB2-Facilities-Elevator-4",
+      "AB1-Facilities-Elevator-1",
+      "A1F-Facilities-Elevator-6",
+      "A2F-Facilities-Elevator-1",
+      "A3F-Facilities-Elevator-1",
+      "A4F-Facilities-Elevator-1",
+      "A5F-Facilities-Elevator-1"
+    ],
+    "5": [
+      "AB4-Facilities-Elevator-5",
+      "AB2-Facilities-Elevator-5",
+      "AB1-Facilities-Elevator-2",
+      "A1F-Facilities-Elevator-7",
+      "A2F-Facilities-Elevator-2",
+      "A3F-Facilities-Elevator-2",
+      "A4F-Facilities-Elevator-2",
+      "A5F-Facilities-Elevator-2"
+    ],
+    "6": [
+      "AB4-Facilities-Elevator-6",
+      "AB2-Facilities-Elevator-6",
+      "AB1-Facilities-Elevator-3",
+      "A1F-Facilities-Elevator-8",
+      "A2F-Facilities-Elevator-3",
+      "A3F-Facilities-Elevator-3",
+      "A4F-Facilities-Elevator-3",
+      "A5F-Facilities-Elevator-3"
+    ],
+    "7": [
+      "AB2-Facilities-Elevator-7",
+      "AB1-Facilities-Elevator-7",
+      "A1F-Facilities-Elevator-3",
+      "A2F-Facilities-Elevator-7",
+      "A3F-Facilities-Elevator-7",
+      "A4F-Facilities-Elevator-7"
+    ],
+    "8": [
+      "AB2-Facilities-Elevator-8",
+      "AB1-Facilities-Elevator-8",
+      "AGL-Facilities-Elevator-2",
+      "A1F-Facilities-Elevator-4",
+      "A2F-Facilities-Elevator-8",
+      "A3F-Facilities-Elevator-8",
+      "A4F-Facilities-Elevator-8"
+    ],
+    "9": [
+      "AB2-Facilities-Elevator-9",
+      "AB1-Facilities-Elevator-9",
+      "AGL-Facilities-Elevator-3",
+      "A1F-Facilities-Elevator-5",
+      "A2F-Facilities-Elevator-9",
+      "A3F-Facilities-Elevator-9",
+      "A4F-Facilities-Elevator-9"
+    ],
+    "10": ["AGL-Facilities-Elevator-1", "A1F-Facilities-Elevator-1"],
+    "11": ["A2F-Facilities-StairsDown-1", "A3F-Facilities-StairsDown-2"]
+  }
+}

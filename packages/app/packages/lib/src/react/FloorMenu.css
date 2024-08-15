@@ -1,0 +1,48 @@
+.floor-menu {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 95vw;
+  height: 100vh;
+  height: 100svh;
+
+  pointer-events: none;
+  z-index: 5;
+}
+
+.floor-menu-content {
+  background-color: white;
+  box-shadow: 0.5em 0.5em 0 black;
+  pointer-events: auto;
+}
+
+.floor-menu-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floor-menu2 {
+  width: calc(100vw - 5vmin);
+  width: calc(100svw - 5vmin);
+  height: calc(100vh - 5vmin);
+  height: calc(100svh - 5vmin);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  padding: 2.5vmin;
+
+  overflow-y: scroll;
+
+  pointer-events: initial;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}

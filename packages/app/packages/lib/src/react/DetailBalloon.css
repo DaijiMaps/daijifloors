@@ -1,0 +1,12 @@
+.detail-balloon {
+}
+
+.detail-balloon > path {
+  fill: white;
+  stroke: grey;
+}
+
+.detail-balloon > path.shadow {
+  fill: black;
+  stroke: none;
+}

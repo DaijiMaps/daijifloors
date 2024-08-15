@@ -1,0 +1,59 @@
+.floor-button {
+  box-sizing: border-box;
+  width: 95vw;
+  margin: 2.5vw;
+  padding: 1em;
+
+  background-color: white;
+
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.floor-button {
+  box-shadow: 0.5em 0.5em 0 black;
+}
+
+.floor-button:active {
+  background-color: whitesmoke;
+}
+
+.floor-button-content {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+}
+
+.floor-button-main {
+  flex: auto;
+}
+
+.floor-button-main > h2 {
+  margin: 0;
+  font-size: 5em;
+  font-weight: lighter;
+  text-align: center;
+  pointer-events: none;
+}
+
+.floor-button-main > p {
+  text-align: center;
+  margin: 0.5em;
+  font-size: 2em;
+  font-weight: lighter;
+  pointer-events: none;
+}
+
+.floor-button-categories > span {
+  white-space: nowrap;
+}
+
+.floor-button-prev,
+.floor-button-next {
+  font-size: 3em;
+  padding: 0.5em;
+  border: 1px solid black;
+  width: 1.25em;
+  text-align: center;
+}

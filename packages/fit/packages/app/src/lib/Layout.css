@@ -1,0 +1,99 @@
+:root,
+html,
+body {
+  background-color: lightgrey !important;
+  contain: initial !important;
+  height: initial !important;
+}
+
+.frames {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  /*
+  position: absolute;
+  left: 0;
+  top: 120px;
+  */
+  font-size: 1em;
+  margin: 10px;
+}
+
+.info > table {
+  border: solid 1px black;
+  border-spacing: 0;
+}
+
+.info thead {
+  text-align: left;
+}
+
+.info tbody {
+  text-align: right;
+}
+
+.info tr {
+}
+
+.info td {
+  contain: strict;
+  border: solid 0.5px grey;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.frame {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100px;
+  color: white;
+  background-color: darkgreen;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  box-sizing: border-box;
+  contain: strict;
+}
+
+.frame > p {
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.frame > p > span {
+  white-space: nowrap;
+}
+
+.svg-frame {
+  /*
+  position: absolute;
+  left: 0;
+  top: 0;
+  */
+  display: block;
+
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.svg-frame-loc {
+  fill: red;
+}
+
+.frame > p,
+.svg-frame > text > tspan {
+  font-family: 'Avenir', sans-serif;
+}
+
+input {
+  pointer-events: initial;
+}

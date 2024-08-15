@@ -1,0 +1,9 @@
+packages:
+  - 'packages/app/packages/main'
+  - 'packages/app/packages/lib'
+  - 'packages/cli'
+  - 'packages/create'
+  - 'packages/demos/*'
+  - 'packages/fit/packages/app'
+  - 'packages/fit/packages/cli'
+  - 'packages/inkscape'

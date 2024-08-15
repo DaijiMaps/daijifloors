@@ -1,0 +1,31 @@
+{
+  "name": "@daijimaps/daijifloors-fit-cli",
+  "private": "false",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "daijifloors-fit-names": "./dist/daijifloors-fit-names.js",
+    "daijifloors-fit-names-wide": "./dist/daijifloors-fit-names-wide.js"
+  },
+  "files": [
+    "./dist/*"
+  ],
+  "scripts": {
+    "build": "tsc && tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@effect/schema": "^0.71.0",
+    "node": "^22.6.0",
+    "puppeteer": "^23.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "tsup": "^8.2.4"
+  }
+}

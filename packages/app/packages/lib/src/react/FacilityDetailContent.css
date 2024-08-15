@@ -1,0 +1,45 @@
+.facility-detail-content {
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 1em;
+}
+
+.facility-detail-content > p {
+  margin: 1.5em 0.5em;
+  font-size: 1.25em;
+}
+
+.facility-detail-content > .facility-detail-facility-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.facility-detail-content > .facility-detail-facility-name > .facility-name {
+  border: none;
+}
+
+.facility-detail-content > .facility-detail-facility-name > h1 {
+  font-size: 4em;
+  font-family: 'Avenir';
+  font-weight: normal;
+  text-align: center;
+  margin: 0.75em;
+}
+
+.facility-detail-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.5em auto;
+  width: 13em;
+  p {
+    pointer-events: auto;
+    border: 0.1px solid black;
+    margin: 0.5em 0.55em;
+    padding: 0.5em 0.5em;
+    width: 2em;
+  }
+}

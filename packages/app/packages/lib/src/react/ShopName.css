@@ -1,0 +1,28 @@
+.shop-name {
+  height: 10em;
+  padding: 1em;
+  margin: -0.05em;
+
+  border: 0.1em solid black;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Avenir';
+}
+
+.shop-name > p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+  pointer-events: none;
+}
+
+.shop-name > p > span {
+  white-space: nowrap;
+}

@@ -1,0 +1,29 @@
+export interface ParamsOps {
+  TITLE: string
+  LOCK_TIMEOUT: number
+  BUSY_TIMEOUT: number
+  APPEARING_TRANSITION: number
+  EXPANDING_TRANSITION: number
+  FLOOR_MENU_SHOP_NAMES_NCOLS: number
+  SYMBOL_SIZE: number
+}
+
+export const paramsOps: ParamsOps = {
+  TITLE: 'Daiji Floors',
+  LOCK_TIMEOUT: 250,
+  BUSY_TIMEOUT: 500,
+  APPEARING_TRANSITION: 375,
+  EXPANDING_TRANSITION: 375,
+  FLOOR_MENU_SHOP_NAMES_NCOLS: 10,
+  SYMBOL_SIZE: 72 * 0.1,
+}
+
+export const installParamsOps = (ops: ParamsOps) => {
+  paramsOps.TITLE = ops.TITLE
+  paramsOps.LOCK_TIMEOUT = ops.LOCK_TIMEOUT
+  paramsOps.BUSY_TIMEOUT = ops.BUSY_TIMEOUT
+  paramsOps.APPEARING_TRANSITION = ops.APPEARING_TRANSITION
+  paramsOps.EXPANDING_TRANSITION = ops.EXPANDING_TRANSITION
+  paramsOps.FLOOR_MENU_SHOP_NAMES_NCOLS = ops.FLOOR_MENU_SHOP_NAMES_NCOLS
+  paramsOps.SYMBOL_SIZE = ops.SYMBOL_SIZE
+}
