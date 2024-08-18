@@ -1,8 +1,11 @@
 import { parseTransformForAddress } from './transform.js'
 import { Element as HE, Root as HR } from 'hast'
+import { is } from 'unist-util-is'
+import { visitParents } from 'unist-util-visit-parents'
 import { Element as XE, Root as XR } from 'xast'
 
 type Element = HE | HR | XR | XE
+type Root = HR | XR
 
 export type Point = { x: number; y: number }
 export type Addreesses = Map<string, Point>
@@ -96,4 +99,53 @@ export function checkAddress(address: string): boolean {
 function buildTransform(n: Element): Point | null {
   const a = getTransform(n)
   return a ? parseTransformForAddress(a) : null
+}
+
+export const allAddresses: Map<string, Point> = new Map()
+export const allPoints: Map<string, string[]> = new Map()
+
+export const saveAddressesAndPoints = (ast: XR): void => {
+  visitParents(ast, (e, parents) => {
+    if (is(e, 'element')) {
+      if (isPoint(e)) {
+        const a = buildAddress(e, parents)
+        const p = getPoint(e)
+        if (a !== null && p !== null) {
+          allAddresses.set(a, p)
+          const s = `${p.x},${p.y}`
+          let xs = allPoints.get(s)
+          if (xs === undefined) {
+            xs = []
+          }
+          xs.push(a)
+          allPoints.set(s, xs)
+        }
+      }
+    }
+  })
+
+  console.log('allAddresses:', allAddresses)
+  console.log('allPoints:', allPoints)
+}
+
+// XXX REFACTOR
+// - find 'Content' and check the parent
+// - if the parent is layer, save 'Content' tree with the layer name
+
+export const layerNames = new Array<string>()
+
+export const saveFloorLayerNames = (ast: Root) => {
+  visitParents<Root, undefined>(ast, (n) => {
+    if (is(n, 'element') && getName(n) === 'g') {
+      const label = getLabel(n)
+      if (
+        getStringProperty(n, 'inkscape:groupmode') === 'layer' &&
+        // exclude e.g. (Assets)
+        label?.match(/[^(]/)
+      ) {
+        layerNames.push(label)
+      }
+    }
+  })
+  return layerNames
 }

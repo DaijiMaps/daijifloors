@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { saveAddressesAndPoints, saveFloorLayerNames } from './lib/inkscape'
 import { handleAssets } from './lib/inkscape/assets'
 import { handleFacilities } from './lib/inkscape/facilities'
 import { handleFloorLayers } from './lib/inkscape/layers'
@@ -10,7 +11,11 @@ import { Root } from 'xast'
 import { fromXml } from 'xast-util-from-xml'
 
 const handleInkscapeSvg = (ast: Root, dir: string) => {
+  saveAddressesAndPoints(ast)
+  saveFloorLayerNames(ast)
+
   handleViewBox(ast, dir)
+  // XXX handleAddresses() - addresses/addresses_XXX.json
   handleResolvedAddrresses(ast, dir)
   handleAssets(ast, dir)
   handleMarkers(ast, dir)

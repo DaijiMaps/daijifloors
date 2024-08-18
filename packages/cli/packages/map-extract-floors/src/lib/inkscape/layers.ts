@@ -1,3 +1,4 @@
+import { layerNames } from '../inkscape'
 import { handleAddresses } from './addresses'
 import { handleFloors } from './floors'
 import { handleNames } from './names'
@@ -9,27 +10,6 @@ import { Element, Root } from 'xast'
 export interface Layer {
   name: string
   element: Element
-}
-
-// XXX REFACTOR
-// - find 'Content' and check the parent
-// - if the parent is layer, save 'Content' tree with the layer name
-
-const saveFloorLayerNames = (ast: Root) => {
-  const layerNames = new Array<string>()
-  visitParents<Root, undefined>(ast, (n) => {
-    if (is(n, 'element') && n.name === 'g') {
-      const label = n.attributes['inkscape:label']
-      if (
-        n.attributes['inkscape:groupmode'] === 'layer' &&
-        // exclude e.g. (Assets)
-        label?.match(/[^(]/)
-      ) {
-        layerNames.push(label)
-      }
-    }
-  })
-  return layerNames
 }
 
 const saveFloorLayers = (ast: Root, layerNames: string[]) => {
@@ -60,7 +40,6 @@ const saveFloorLayers = (ast: Root, layerNames: string[]) => {
 }
 
 export const handleFloorLayers = (ast: Root, dir: string) => {
-  const layerNames = saveFloorLayerNames(ast)
   const layers = saveFloorLayers(ast, layerNames)
 
   handleNames(layers, dir)
