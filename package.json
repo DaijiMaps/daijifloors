@@ -16,6 +16,7 @@
     "*": "prettier --write --cache --ignore-unknown"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "prettier": "pnpx prettier -w ."
   }
 }
