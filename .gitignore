@@ -1,4 +1,6 @@
+*.log
 *.tgz
+*.tsbuildinfo
 .DS_Store
 build/
 dist/
