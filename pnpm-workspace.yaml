@@ -1,7 +1,7 @@
 packages:
   - 'packages/app/packages/main'
   - 'packages/app/packages/lib'
-  - 'packages/cli'
+  - 'packages/cli/packages/map-extract-floors'
   - 'packages/create'
   - 'packages/demos/*'
   - 'packages/fit/packages/app'
