@@ -3,25 +3,40 @@
   "names": ["5F", "4F", "3F", "2F", "1F", "GL", "B1", "B2", "B4"],
   "floors": {
     "B4": {
+      "categories": ["daily casual"],
       "backgroundColor": "grey"
     },
     "B2": {
+      "categories": ["daily casual"],
       "backgroundColor": "grey"
     },
     "B1": {
+      "categories": ["daily casual"],
       "backgroundColor": "grey"
     },
-    "GL": {},
+    "GL": {
+      "categories": ["daily casual"],
+      "backgroundColor": "whitesmoke"
+    },
     "1F": {
       "categories": ["fashion", "lifestyle"],
       "backgroundColor": "whitesmoke"
     },
     "2F": {
       "categories": ["daily casual"],
-      "backgroundColor": "whitesmoke"
+      "backgroundColor": "skyblue"
     },
-    "3F": {},
-    "4F": {},
-    "5F": {}
+    "3F": {
+      "categories": ["daily casual"],
+      "backgroundColor": "skyblue"
+    },
+    "4F": {
+      "categories": ["daily casual"],
+      "backgroundColor": "skyblue"
+    },
+    "5F": {
+      "categories": ["daily casual"],
+      "backgroundColor": "skyblue"
+    }
   }
 }
