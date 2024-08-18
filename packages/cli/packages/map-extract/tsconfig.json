@@ -1,0 +1,18 @@
+{
+  "extends": "../../../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+
+    "rootDir": "src",
+    "outDir": "build",
+    "paths": {
+      "@jutaz/transform-parser": ["./types/@jutaz/transform-parser"]
+    }
+  },
+  "include": ["src"]
+}
