@@ -1,0 +1,947 @@
+{
+  "3COINS": {
+    "text": "3COINS",
+    "fontSize": 40,
+    "lines": [{ "text": "3COINS", "fontSize": 40, "dy": 12.5 }]
+  },
+  "ABC-MART": {
+    "text": "ABC-MART",
+    "fontSize": 40,
+    "lines": [{ "text": "ABC-MART", "fontSize": 40, "dy": 12.5 }]
+  },
+  "ABC-MART GRAND STAGE": {
+    "text": "ABC-MART GRAND STAGE",
+    "fontSize": 27,
+    "lines": [
+      { "text": "ABC-MART GRAND", "fontSize": 27, "dy": -12 },
+      { "text": "STAGE", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Afternoon Tea LIVING": {
+    "text": "Afternoon Tea LIVING",
+    "fontSize": 27,
+    "lines": [{ "text": "Afternoon Tea LIVING", "fontSize": 27, "dy": 8.25 }]
+  },
+  "Afternoon Tea TEAROOM": {
+    "text": "Afternoon Tea TEAROOM",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Afternoon Tea", "fontSize": 27, "dy": -12 },
+      { "text": "TEAROOM", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "B:MING LIFE STORE by BEAMS": {
+    "text": "B:MING LIFE STORE by BEAMS",
+    "fontSize": 25,
+    "lines": [
+      { "text": "B:MING LIFE STORE by", "fontSize": 25, "dy": -11 },
+      { "text": "BEAMS", "fontSize": 25, "dy": 26.5 }
+    ]
+  },
+  "CANTERBURY OF NEW ZEALAND": {
+    "text": "CANTERBURY OF NEW ZEALAND",
+    "fontSize": 24,
+    "lines": [
+      { "text": "CANTERBURY OF NEW", "fontSize": 24, "dy": -10.5 },
+      { "text": "ZEALAND", "fontSize": 24, "dy": 25.5 }
+    ]
+  },
+  "De Sé": {
+    "text": "De Sé",
+    "fontSize": 40,
+    "lines": [{ "text": "De Sé", "fontSize": 40, "dy": 12.5 }]
+  },
+  "DESERTSNOW": {
+    "text": "DESERTSNOW",
+    "fontSize": 36,
+    "lines": [{ "text": "DESERTSNOW", "fontSize": 36, "dy": 11.5 }]
+  },
+  "Dr.Martens": {
+    "text": "Dr.Martens",
+    "fontSize": 40,
+    "lines": [{ "text": "Dr.Martens", "fontSize": 40, "dy": 12.5 }]
+  },
+  "go slow caravan": {
+    "text": "go slow caravan",
+    "fontSize": 35,
+    "lines": [{ "text": "go slow caravan", "fontSize": 35, "dy": 10.75 }]
+  },
+  "graniph": {
+    "text": "graniph",
+    "fontSize": 40,
+    "lines": [{ "text": "graniph", "fontSize": 40, "dy": 12.5 }]
+  },
+  "GRAPEFRUIT MOON": {
+    "text": "GRAPEFRUIT MOON",
+    "fontSize": 27,
+    "lines": [{ "text": "GRAPEFRUIT MOON", "fontSize": 27, "dy": 8.25 }]
+  },
+  "GREGORY": {
+    "text": "GREGORY",
+    "fontSize": 40,
+    "lines": [{ "text": "GREGORY", "fontSize": 40, "dy": 12.5 }]
+  },
+  "KEYUCA": {
+    "text": "KEYUCA",
+    "fontSize": 40,
+    "lines": [{ "text": "KEYUCA", "fontSize": 40, "dy": 12.5 }]
+  },
+  "NANGA SHOP YOKOHAMA": {
+    "text": "NANGA SHOP YOKOHAMA",
+    "fontSize": 26,
+    "lines": [
+      { "text": "NANGA SHOP", "fontSize": 26, "dy": -11.5 },
+      { "text": "YOKOHAMA", "fontSize": 26, "dy": 27.5 }
+    ]
+  },
+  "Natural Shoe Store": {
+    "text": "Natural Shoe Store",
+    "fontSize": 30,
+    "lines": [{ "text": "Natural Shoe Store", "fontSize": 30, "dy": 9.5 }]
+  },
+  "ORIHICA": {
+    "text": "ORIHICA",
+    "fontSize": 40,
+    "lines": [{ "text": "ORIHICA", "fontSize": 40, "dy": 12.5 }]
+  },
+  "OWNDAYS": {
+    "text": "OWNDAYS",
+    "fontSize": 40,
+    "lines": [{ "text": "OWNDAYS", "fontSize": 40, "dy": 12.5 }]
+  },
+  "PATRICK LABO": {
+    "text": "PATRICK LABO",
+    "fontSize": 36,
+    "lines": [{ "text": "PATRICK LABO", "fontSize": 36, "dy": 11.5 }]
+  },
+  "Puretre": {
+    "text": "Puretre",
+    "fontSize": 40,
+    "lines": [{ "text": "Puretre", "fontSize": 40, "dy": 12.5 }]
+  },
+  "sock shop": {
+    "text": "sock shop",
+    "fontSize": 40,
+    "lines": [{ "text": "sock shop", "fontSize": 40, "dy": 12.5 }]
+  },
+  "TAKEO KIKUCHI": {
+    "text": "TAKEO KIKUCHI",
+    "fontSize": 34,
+    "lines": [{ "text": "TAKEO KIKUCHI", "fontSize": 34, "dy": 10.5 }]
+  },
+  "Uniqlo": {
+    "text": "Uniqlo",
+    "fontSize": 40,
+    "lines": [{ "text": "Uniqlo", "fontSize": 40, "dy": 12.5 }]
+  },
+  "UNITED ARROWS green label relaxing": {
+    "text": "UNITED ARROWS green label relaxing",
+    "fontSize": 23,
+    "lines": [
+      { "text": "UNITED ARROWS green", "fontSize": 23, "dy": -10 },
+      { "text": "label relaxing", "fontSize": 23, "dy": 24.5 }
+    ]
+  },
+  "UNIX Beauty Innovation": {
+    "text": "UNIX Beauty Innovation",
+    "fontSize": 27,
+    "lines": [
+      { "text": "UNIX Beauty", "fontSize": 27, "dy": -12 },
+      { "text": "Innovation", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Urban Research Doors": {
+    "text": "Urban Research Doors",
+    "fontSize": 26,
+    "lines": [{ "text": "Urban Research Doors", "fontSize": 26, "dy": 8 }]
+  },
+  "VANS": {
+    "text": "VANS",
+    "fontSize": 40,
+    "lines": [{ "text": "VANS", "fontSize": 40, "dy": 12.5 }]
+  },
+  "WEGO": {
+    "text": "WEGO",
+    "fontSize": 40,
+    "lines": [{ "text": "WEGO", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Yogibo Store": {
+    "text": "Yogibo Store",
+    "fontSize": 40,
+    "lines": [{ "text": "Yogibo Store", "fontSize": 40, "dy": 12.5 }]
+  },
+  "’47": {
+    "text": "’47",
+    "fontSize": 40,
+    "lines": [{ "text": "’47", "fontSize": 40, "dy": 12.5 }]
+  },
+  "#C-pla": {
+    "text": "#C-pla",
+    "fontSize": 40,
+    "lines": [{ "text": "#C-pla", "fontSize": 40, "dy": 12.5 }]
+  },
+  "212 KITCHEN STORE": {
+    "text": "212 KITCHEN STORE",
+    "fontSize": 27,
+    "lines": [{ "text": "212 KITCHEN STORE", "fontSize": 27, "dy": 8.25 }]
+  },
+  "ACTUS": {
+    "text": "ACTUS",
+    "fontSize": 40,
+    "lines": [{ "text": "ACTUS", "fontSize": 40, "dy": 12.5 }]
+  },
+  "AMALFI CAFFE": {
+    "text": "AMALFI CAFFE",
+    "fontSize": 36,
+    "lines": [{ "text": "AMALFI CAFFE", "fontSize": 36, "dy": 11.5 }]
+  },
+  "AMERICAN HOLIC": {
+    "text": "AMERICAN HOLIC",
+    "fontSize": 30,
+    "lines": [{ "text": "AMERICAN HOLIC", "fontSize": 30, "dy": 9.5 }]
+  },
+  "Aoyama Flower Market": {
+    "text": "Aoyama Flower Market",
+    "fontSize": 25,
+    "lines": [{ "text": "Aoyama Flower Market", "fontSize": 25, "dy": 7.75 }]
+  },
+  "Aoyama nails": {
+    "text": "Aoyama nails",
+    "fontSize": 39,
+    "lines": [{ "text": "Aoyama nails", "fontSize": 39, "dy": 12.25 }]
+  },
+  "arcteryx": {
+    "text": "arcteryx",
+    "fontSize": 40,
+    "lines": [{ "text": "arcteryx", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Asakusa Kitchen Omiya": {
+    "text": "Asakusa Kitchen Omiya",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Asakusa Kitchen", "fontSize": 27, "dy": -12 },
+      { "text": "Omiya", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "ATM / Bank": {
+    "text": "ATM / Bank",
+    "fontSize": 40,
+    "lines": [{ "text": "ATM / Bank", "fontSize": 40, "dy": 12.5 }]
+  },
+  "AWESOME STORE": {
+    "text": "AWESOME STORE",
+    "fontSize": 30,
+    "lines": [{ "text": "AWESOME STORE", "fontSize": 30, "dy": 9.5 }]
+  },
+  "baby park": {
+    "text": "baby park",
+    "fontSize": 40,
+    "lines": [{ "text": "baby park", "fontSize": 40, "dy": 12.5 }]
+  },
+  "BEAMS": {
+    "text": "BEAMS",
+    "fontSize": 40,
+    "lines": [{ "text": "BEAMS", "fontSize": 40, "dy": 12.5 }]
+  },
+  "BEAUTY & YOUTH UNITED ARROWS": {
+    "text": "BEAUTY & YOUTH UNITED ARROWS",
+    "fontSize": 23,
+    "lines": [
+      { "text": "BEAUTY & YOUTH", "fontSize": 23, "dy": -10 },
+      { "text": "UNITED ARROWS", "fontSize": 23, "dy": 24.5 }
+    ]
+  },
+  "BISTRO Ishikawaitei DELI": {
+    "text": "BISTRO Ishikawaitei DELI",
+    "fontSize": 27,
+    "lines": [
+      { "text": "BISTRO Ishikawaitei", "fontSize": 27, "dy": -12 },
+      { "text": "DELI", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "BLUE BOTTLE COFFEE": {
+    "text": "BLUE BOTTLE COFFEE",
+    "fontSize": 27,
+    "lines": [
+      { "text": "BLUE BOTTLE", "fontSize": 27, "dy": -12 },
+      { "text": "COFFEE", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Bornelund World of Play": {
+    "text": "Bornelund World of Play",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Bornelund World of", "fontSize": 27, "dy": -12 },
+      { "text": "Play", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "BREEZE": {
+    "text": "BREEZE",
+    "fontSize": 40,
+    "lines": [{ "text": "BREEZE", "fontSize": 40, "dy": 12.5 }]
+  },
+  "BRIEFING": {
+    "text": "BRIEFING",
+    "fontSize": 40,
+    "lines": [{ "text": "BRIEFING", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Bshop": {
+    "text": "Bshop",
+    "fontSize": 40,
+    "lines": [{ "text": "Bshop", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Cafe Cockteldo": {
+    "text": "Cafe Cockteldo",
+    "fontSize": 36,
+    "lines": [{ "text": "Cafe Cockteldo", "fontSize": 36, "dy": 11.5 }]
+  },
+  "camper": {
+    "text": "camper",
+    "fontSize": 40,
+    "lines": [{ "text": "camper", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Chigasaki Hamadaya": {
+    "text": "Chigasaki Hamadaya",
+    "fontSize": 28,
+    "lines": [{ "text": "Chigasaki Hamadaya", "fontSize": 28, "dy": 9 }]
+  },
+  "Children's Photo Castle Studio Alice": {
+    "text": "Children's Photo Castle Studio Alice",
+    "fontSize": 24,
+    "lines": [
+      { "text": "Children's Photo Castle", "fontSize": 24, "dy": -10.5 },
+      { "text": "Studio Alice", "fontSize": 24, "dy": 25.5 }
+    ]
+  },
+  "Chinese side dish Tohobeni": {
+    "text": "Chinese side dish Tohobeni",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Chinese side dish", "fontSize": 27, "dy": -12 },
+      { "text": "Tohobeni", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "coen": {
+    "text": "coen",
+    "fontSize": 40,
+    "lines": [{ "text": "coen", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Collaboration": {
+    "text": "Collaboration",
+    "fontSize": 38,
+    "lines": [{ "text": "Collaboration", "fontSize": 38, "dy": 12 }]
+  },
+  "COLLAGE GALLARDAGALANTE": {
+    "text": "COLLAGE GALLARDAGALANTE",
+    "fontSize": 24,
+    "lines": [
+      { "text": "COLLAGE", "fontSize": 24, "dy": -10.5 },
+      { "text": "GALLARDAGALANTE", "fontSize": 24, "dy": 25.5 }
+    ]
+  },
+  "columbia sportswear": {
+    "text": "columbia sportswear",
+    "fontSize": 28,
+    "lines": [{ "text": "columbia sportswear", "fontSize": 28, "dy": 9 }]
+  },
+  "corners sports authority": {
+    "text": "corners sports authority",
+    "fontSize": 27,
+    "lines": [
+      { "text": "corners sports", "fontSize": 27, "dy": -12 },
+      { "text": "authority", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Cosme Kitchen": {
+    "text": "Cosme Kitchen",
+    "fontSize": 36,
+    "lines": [{ "text": "Cosme Kitchen", "fontSize": 36, "dy": 11.5 }]
+  },
+  "Dadway": {
+    "text": "Dadway",
+    "fontSize": 40,
+    "lines": [{ "text": "Dadway", "fontSize": 40, "dy": 12.5 }]
+  },
+  "daiso": {
+    "text": "daiso",
+    "fontSize": 40,
+    "lines": [{ "text": "daiso", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Daito Seika": {
+    "text": "Daito Seika",
+    "fontSize": 40,
+    "lines": [{ "text": "Daito Seika", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Davines": {
+    "text": "Davines",
+    "fontSize": 40,
+    "lines": [{ "text": "Davines", "fontSize": 40, "dy": 12.5 }]
+  },
+  "DESCENT": {
+    "text": "DESCENT",
+    "fontSize": 40,
+    "lines": [{ "text": "DESCENT", "fontSize": 40, "dy": 12.5 }]
+  },
+  "docomo shop": {
+    "text": "docomo shop",
+    "fontSize": 38,
+    "lines": [{ "text": "docomo shop", "fontSize": 38, "dy": 12 }]
+  },
+  "Donburo Yamasuke": {
+    "text": "Donburo Yamasuke",
+    "fontSize": 30,
+    "lines": [{ "text": "Donburo Yamasuke", "fontSize": 30, "dy": 9.5 }]
+  },
+  "Dr. Stretch": {
+    "text": "Dr. Stretch",
+    "fontSize": 40,
+    "lines": [{ "text": "Dr. Stretch", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Foodway": {
+    "text": "Foodway",
+    "fontSize": 40,
+    "lines": [{ "text": "Foodway", "fontSize": 40, "dy": 12.5 }]
+  },
+  "FRESHNESS BURGER": {
+    "text": "FRESHNESS BURGER",
+    "fontSize": 27,
+    "lines": [{ "text": "FRESHNESS BURGER", "fontSize": 27, "dy": 8.25 }]
+  },
+  "Fukumanen": {
+    "text": "Fukumanen",
+    "fontSize": 40,
+    "lines": [{ "text": "Fukumanen", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Fuyu Garden": {
+    "text": "Fuyu Garden",
+    "fontSize": 40,
+    "lines": [{ "text": "Fuyu Garden", "fontSize": 40, "dy": 12.5 }]
+  },
+  "GLOBAL WORK": {
+    "text": "GLOBAL WORK",
+    "fontSize": 35,
+    "lines": [{ "text": "GLOBAL WORK", "fontSize": 35, "dy": 10.75 }]
+  },
+  "grirose": {
+    "text": "grirose",
+    "fontSize": 40,
+    "lines": [{ "text": "grirose", "fontSize": 40, "dy": 12.5 }]
+  },
+  "hack drug": {
+    "text": "hack drug",
+    "fontSize": 40,
+    "lines": [{ "text": "hack drug", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Hakata Daruma JAPAN": {
+    "text": "Hakata Daruma JAPAN",
+    "fontSize": 25,
+    "lines": [{ "text": "Hakata Daruma JAPAN", "fontSize": 25, "dy": 7.75 }]
+  },
+  "Hanamaru Dining Select": {
+    "text": "Hanamaru Dining Select",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Hanamaru Dining", "fontSize": 27, "dy": -12 },
+      { "text": "Select", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Hand-and-Hand": {
+    "text": "Hand-and-Hand",
+    "fontSize": 34,
+    "lines": [{ "text": "Hand-and-Hand", "fontSize": 34, "dy": 10.5 }]
+  },
+  "HELLY HANSEN": {
+    "text": "HELLY HANSEN",
+    "fontSize": 35,
+    "lines": [{ "text": "HELLY HANSEN", "fontSize": 35, "dy": 10.75 }]
+  },
+  "Hervé Chapelier": {
+    "text": "Hervé Chapelier",
+    "fontSize": 35,
+    "lines": [{ "text": "Hervé Chapelier", "fontSize": 35, "dy": 10.75 }]
+  },
+  "HOKA Yokohama": {
+    "text": "HOKA Yokohama",
+    "fontSize": 33,
+    "lines": [{ "text": "HOKA Yokohama", "fontSize": 33, "dy": 10.25 }]
+  },
+  "hotel chocolat": {
+    "text": "hotel chocolat",
+    "fontSize": 37,
+    "lines": [{ "text": "hotel chocolat", "fontSize": 37, "dy": 11.75 }]
+  },
+  "I feeling": {
+    "text": "I feeling",
+    "fontSize": 40,
+    "lines": [{ "text": "I feeling", "fontSize": 40, "dy": 12.5 }]
+  },
+  "icity": {
+    "text": "icity",
+    "fontSize": 40,
+    "lines": [{ "text": "icity", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Indian food mumbai": {
+    "text": "Indian food mumbai",
+    "fontSize": 29,
+    "lines": [{ "text": "Indian food mumbai", "fontSize": 29, "dy": 9.25 }]
+  },
+  "Insurance Review Honpo / Aso Labo": {
+    "text": "Insurance Review Honpo / Aso Labo",
+    "fontSize": 24,
+    "lines": [
+      { "text": "Insurance Review Honpo", "fontSize": 24, "dy": -10.5 },
+      { "text": "/ Aso Labo", "fontSize": 24, "dy": 25.5 }
+    ]
+  },
+  "Ishigamaya hamburger": {
+    "text": "Ishigamaya hamburger",
+    "fontSize": 26,
+    "lines": [{ "text": "Ishigamaya hamburger", "fontSize": 26, "dy": 8 }]
+  },
+  "j.s. pancake cafe": {
+    "text": "j.s. pancake cafe",
+    "fontSize": 34,
+    "lines": [{ "text": "j.s. pancake cafe", "fontSize": 34, "dy": 10.5 }]
+  },
+  "Jiyugaoka Maruyama": {
+    "text": "Jiyugaoka Maruyama",
+    "fontSize": 28,
+    "lines": [{ "text": "Jiyugaoka Maruyama", "fontSize": 28, "dy": 9 }]
+  },
+  "Jouete": {
+    "text": "Jouete",
+    "fontSize": 40,
+    "lines": [{ "text": "Jouete", "fontSize": 40, "dy": 12.5 }]
+  },
+  "journal standard Furniture": {
+    "text": "journal standard Furniture",
+    "fontSize": 27,
+    "lines": [
+      { "text": "journal standard", "fontSize": 27, "dy": -12 },
+      { "text": "Furniture", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "JOURNAL STANDARD relume": {
+    "text": "JOURNAL STANDARD relume",
+    "fontSize": 26,
+    "lines": [
+      { "text": "JOURNAL STANDARD", "fontSize": 26, "dy": -11.5 },
+      { "text": "relume", "fontSize": 26, "dy": 27.5 }
+    ]
+  },
+  "kaldi coffee farm": {
+    "text": "kaldi coffee farm",
+    "fontSize": 34,
+    "lines": [{ "text": "kaldi coffee farm", "fontSize": 34, "dy": 10.5 }]
+  },
+  "Kamakura Katsutei Aradama": {
+    "text": "Kamakura Katsutei Aradama",
+    "fontSize": 26,
+    "lines": [
+      { "text": "Kamakura Katsutei", "fontSize": 26, "dy": -11.5 },
+      { "text": "Aradama", "fontSize": 26, "dy": 27.5 }
+    ]
+  },
+  "Kamakura pasta": {
+    "text": "Kamakura pasta",
+    "fontSize": 35,
+    "lines": [{ "text": "Kamakura pasta", "fontSize": 35, "dy": 10.75 }]
+  },
+  "Kaneko Optical Shop": {
+    "text": "Kaneko Optical Shop",
+    "fontSize": 27,
+    "lines": [{ "text": "Kaneko Optical Shop", "fontSize": 27, "dy": 8.25 }]
+  },
+  "Keen": {
+    "text": "Keen",
+    "fontSize": 40,
+    "lines": [{ "text": "Keen", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Kumazawa Bookstore": {
+    "text": "Kumazawa Bookstore",
+    "fontSize": 27,
+    "lines": [{ "text": "Kumazawa Bookstore", "fontSize": 27, "dy": 8.25 }]
+  },
+  "LA SALSA SOUTHERN CALIFORNIA RESTAURANT": {
+    "text": "LA SALSA SOUTHERN CALIFORNIA RESTAURANT",
+    "fontSize": 20,
+    "lines": [
+      { "text": "LA SALSA SOUTHERN", "fontSize": 20, "dy": -9 },
+      { "text": "CALIFORNIA RESTAURANT", "fontSize": 20, "dy": 21 }
+    ]
+  },
+  "little hand": {
+    "text": "little hand",
+    "fontSize": 40,
+    "lines": [{ "text": "little hand", "fontSize": 40, "dy": 12.5 }]
+  },
+  "MARcourt": {
+    "text": "MARcourt",
+    "fontSize": 40,
+    "lines": [{ "text": "MARcourt", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Maridress": {
+    "text": "Maridress",
+    "fontSize": 40,
+    "lines": [{ "text": "Maridress", "fontSize": 40, "dy": 12.5 }]
+  },
+  "MARLMARL": {
+    "text": "MARLMARL",
+    "fontSize": 40,
+    "lines": [{ "text": "MARLMARL", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Marugame Seimen": {
+    "text": "Marugame Seimen",
+    "fontSize": 30,
+    "lines": [{ "text": "Marugame Seimen", "fontSize": 30, "dy": 9.5 }]
+  },
+  "Meat restaurant Gyuzo": {
+    "text": "Meat restaurant Gyuzo",
+    "fontSize": 26,
+    "lines": [{ "text": "Meat restaurant Gyuzo", "fontSize": 26, "dy": 8 }]
+  },
+  "Meilan": {
+    "text": "Meilan",
+    "fontSize": 40,
+    "lines": [{ "text": "Meilan", "fontSize": 40, "dy": 12.5 }]
+  },
+  "micro scooter": {
+    "text": "micro scooter",
+    "fontSize": 38,
+    "lines": [{ "text": "micro scooter", "fontSize": 38, "dy": 12 }]
+  },
+  "moimoln": {
+    "text": "moimoln",
+    "fontSize": 40,
+    "lines": [{ "text": "moimoln", "fontSize": 40, "dy": 12.5 }]
+  },
+  "MOMO natural": {
+    "text": "MOMO natural",
+    "fontSize": 36,
+    "lines": [{ "text": "MOMO natural", "fontSize": 36, "dy": 11.5 }]
+  },
+  "montbell": {
+    "text": "montbell",
+    "fontSize": 40,
+    "lines": [{ "text": "montbell", "fontSize": 40, "dy": 12.5 }]
+  },
+  "move": {
+    "text": "move",
+    "fontSize": 40,
+    "lines": [{ "text": "move", "fontSize": 40, "dy": 12.5 }]
+  },
+  "My pillow": {
+    "text": "My pillow",
+    "fontSize": 40,
+    "lines": [{ "text": "My pillow", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Nakagawa Masashichi Shoten": {
+    "text": "Nakagawa Masashichi Shoten",
+    "fontSize": 26,
+    "lines": [
+      { "text": "Nakagawa Masashichi", "fontSize": 26, "dy": -11.5 },
+      { "text": "Shoten", "fontSize": 26, "dy": 27.5 }
+    ]
+  },
+  "NATURAL CREPE": {
+    "text": "NATURAL CREPE",
+    "fontSize": 33,
+    "lines": [{ "text": "NATURAL CREPE", "fontSize": 33, "dy": 10.25 }]
+  },
+  "Nojima": {
+    "text": "Nojima",
+    "fontSize": 40,
+    "lines": [{ "text": "Nojima", "fontSize": 40, "dy": 12.5 }]
+  },
+  "oakley store": {
+    "text": "oakley store",
+    "fontSize": 40,
+    "lines": [{ "text": "oakley store", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Obon de rice": {
+    "text": "Obon de rice",
+    "fontSize": 40,
+    "lines": [{ "text": "Obon de rice", "fontSize": 40, "dy": 12.5 }]
+  },
+  "OKAIDI": {
+    "text": "OKAIDI",
+    "fontSize": 40,
+    "lines": [{ "text": "OKAIDI", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Olive dentistry / orthodontics": {
+    "text": "Olive dentistry / orthodontics",
+    "fontSize": 26,
+    "lines": [
+      { "text": "Olive dentistry /", "fontSize": 26, "dy": -11.5 },
+      { "text": "orthodontics", "fontSize": 26, "dy": 27.5 }
+    ]
+  },
+  "Original green onion octopus": {
+    "text": "Original green onion octopus",
+    "fontSize": 26,
+    "lines": [
+      { "text": "Original green onion", "fontSize": 26, "dy": -11.5 },
+      { "text": "octopus", "fontSize": 26, "dy": 27.5 }
+    ]
+  },
+  "OVERRIDE": {
+    "text": "OVERRIDE",
+    "fontSize": 40,
+    "lines": [{ "text": "OVERRIDE", "fontSize": 40, "dy": 12.5 }]
+  },
+  "PAL’LAS PALACE": {
+    "text": "PAL’LAS PALACE",
+    "fontSize": 34,
+    "lines": [{ "text": "PAL’LAS PALACE", "fontSize": 34, "dy": 10.5 }]
+  },
+  "Peak Performance": {
+    "text": "Peak Performance",
+    "fontSize": 32,
+    "lines": [{ "text": "Peak Performance", "fontSize": 32, "dy": 10 }]
+  },
+  "Pet Paradise DX": {
+    "text": "Pet Paradise DX",
+    "fontSize": 35,
+    "lines": [{ "text": "Pet Paradise DX", "fontSize": 35, "dy": 10.75 }]
+  },
+  "pony cleaning": {
+    "text": "pony cleaning",
+    "fontSize": 38,
+    "lines": [{ "text": "pony cleaning", "fontSize": 38, "dy": 12 }]
+  },
+  "poppins nursery school": {
+    "text": "poppins nursery school",
+    "fontSize": 25,
+    "lines": [{ "text": "poppins nursery school", "fontSize": 25, "dy": 7.75 }]
+  },
+  "POTR YOKOHAMA": {
+    "text": "POTR YOKOHAMA",
+    "fontSize": 30,
+    "lines": [{ "text": "POTR YOKOHAMA", "fontSize": 30, "dy": 9.5 }]
+  },
+  "R Baker": {
+    "text": "R Baker",
+    "fontSize": 40,
+    "lines": [{ "text": "R Baker", "fontSize": 40, "dy": 12.5 }]
+  },
+  "raffine": {
+    "text": "raffine",
+    "fontSize": 40,
+    "lines": [{ "text": "raffine", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Ramen Warm Holidays": {
+    "text": "Ramen Warm Holidays",
+    "fontSize": 26,
+    "lines": [{ "text": "Ramen Warm Holidays", "fontSize": 26, "dy": 8 }]
+  },
+  "Ranman Shokudo": {
+    "text": "Ranman Shokudo",
+    "fontSize": 33,
+    "lines": [{ "text": "Ranman Shokudo", "fontSize": 33, "dy": 10.25 }]
+  },
+  "Repair concierge Big Mama": {
+    "text": "Repair concierge Big Mama",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Repair concierge Big", "fontSize": 27, "dy": -12 },
+      { "text": "Mama", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "RHC CAFE": {
+    "text": "RHC CAFE",
+    "fontSize": 40,
+    "lines": [{ "text": "RHC CAFE", "fontSize": 40, "dy": 12.5 }]
+  },
+  "RHC Ron Herman": {
+    "text": "RHC Ron Herman",
+    "fontSize": 32,
+    "lines": [{ "text": "RHC Ron Herman", "fontSize": 32, "dy": 10 }]
+  },
+  "ringer hat": {
+    "text": "ringer hat",
+    "fontSize": 40,
+    "lines": [{ "text": "ringer hat", "fontSize": 40, "dy": 12.5 }]
+  },
+  "ROLL ICE CREAM FACTORY": {
+    "text": "ROLL ICE CREAM FACTORY",
+    "fontSize": 27,
+    "lines": [
+      { "text": "ROLL ICE CREAM", "fontSize": 27, "dy": -12 },
+      { "text": "FACTORY", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Sakura Heiando": {
+    "text": "Sakura Heiando",
+    "fontSize": 36,
+    "lines": [{ "text": "Sakura Heiando", "fontSize": 36, "dy": 11.5 }]
+  },
+  "seoul market": {
+    "text": "seoul market",
+    "fontSize": 40,
+    "lines": [{ "text": "seoul market", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Shimamura Musical Instruments": {
+    "text": "Shimamura Musical Instruments",
+    "fontSize": 25,
+    "lines": [
+      { "text": "Shimamura Musical", "fontSize": 25, "dy": -11 },
+      { "text": "Instruments", "fontSize": 25, "dy": 26.5 }
+    ]
+  },
+  "snow peak": {
+    "text": "snow peak",
+    "fontSize": 40,
+    "lines": [{ "text": "snow peak", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Soba and tempura Ishiraku": {
+    "text": "Soba and tempura Ishiraku",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Soba and tempura", "fontSize": 27, "dy": -12 },
+      { "text": "Ishiraku", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "sophisticated": {
+    "text": "sophisticated",
+    "fontSize": 38,
+    "lines": [{ "text": "sophisticated", "fontSize": 38, "dy": 12 }]
+  },
+  "sports authority": {
+    "text": "sports authority",
+    "fontSize": 36,
+    "lines": [{ "text": "sports authority", "fontSize": 36, "dy": 11.5 }]
+  },
+  "tandey beautiful": {
+    "text": "tandey beautiful",
+    "fontSize": 35,
+    "lines": [{ "text": "tandey beautiful", "fontSize": 35, "dy": 10.75 }]
+  },
+  "THE NORTH FACE": {
+    "text": "THE NORTH FACE",
+    "fontSize": 30,
+    "lines": [{ "text": "THE NORTH FACE", "fontSize": 30, "dy": 9.5 }]
+  },
+  "THE NORTH FACE / HELLY HANSEN kids": {
+    "text": "THE NORTH FACE / HELLY HANSEN kids",
+    "fontSize": 22,
+    "lines": [
+      { "text": "THE NORTH FACE / HELLY", "fontSize": 22, "dy": -9.5 },
+      { "text": "HANSEN kids", "fontSize": 22, "dy": 23.5 }
+    ]
+  },
+  "thermos styling store": {
+    "text": "thermos styling store",
+    "fontSize": 28,
+    "lines": [{ "text": "thermos styling store", "fontSize": 28, "dy": 9 }]
+  },
+  "Thirty one ice cream": {
+    "text": "Thirty one ice cream",
+    "fontSize": 29,
+    "lines": [{ "text": "Thirty one ice cream", "fontSize": 29, "dy": 9.25 }]
+  },
+  "Tokyo Gas Yokohama Showroom": {
+    "text": "Tokyo Gas Yokohama Showroom",
+    "fontSize": 25,
+    "lines": [
+      { "text": "Tokyo Gas Yokohama", "fontSize": 25, "dy": -11 },
+      { "text": "Showroom", "fontSize": 25, "dy": 26.5 }
+    ]
+  },
+  "towel museum": {
+    "text": "towel museum",
+    "fontSize": 37,
+    "lines": [{ "text": "towel museum", "fontSize": 37, "dy": 11.75 }]
+  },
+  "toys academy": {
+    "text": "toys academy",
+    "fontSize": 38,
+    "lines": [{ "text": "toys academy", "fontSize": 38, "dy": 12 }]
+  },
+  "Toys R Us / Babies R Us": {
+    "text": "Toys R Us / Babies R Us",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Toys R Us / Babies R", "fontSize": 27, "dy": -12 },
+      { "text": "Us", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "Travis Mathew": {
+    "text": "Travis Mathew",
+    "fontSize": 38,
+    "lines": [{ "text": "Travis Mathew", "fontSize": 38, "dy": 12 }]
+  },
+  "TRU EYELASH": {
+    "text": "TRU EYELASH",
+    "fontSize": 37,
+    "lines": [{ "text": "TRU EYELASH", "fontSize": 37, "dy": 11.75 }]
+  },
+  "Tsukiji Shokudo Gen-chan": {
+    "text": "Tsukiji Shokudo Gen-chan",
+    "fontSize": 27,
+    "lines": [
+      { "text": "Tsukiji Shokudo", "fontSize": 27, "dy": -12 },
+      { "text": "Gen-chan", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "tully's coffee": {
+    "text": "tully's coffee",
+    "fontSize": 40,
+    "lines": [{ "text": "tully's coffee", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Tuna wholesaler Megumi Suisan": {
+    "text": "Tuna wholesaler Megumi Suisan",
+    "fontSize": 24,
+    "lines": [
+      { "text": "Tuna wholesaler Megumi", "fontSize": 24, "dy": -10.5 },
+      { "text": "Suisan", "fontSize": 24, "dy": 25.5 }
+    ]
+  },
+  "Ueshima coffee shop": {
+    "text": "Ueshima coffee shop",
+    "fontSize": 28,
+    "lines": [{ "text": "Ueshima coffee shop", "fontSize": 28, "dy": 9 }]
+  },
+  "UNI COFFEE ROASTERY": {
+    "text": "UNI COFFEE ROASTERY",
+    "fontSize": 27,
+    "lines": [
+      { "text": "UNI COFFEE", "fontSize": 27, "dy": -12 },
+      { "text": "ROASTERY", "fontSize": 27, "dy": 28.5 }
+    ]
+  },
+  "xyl": {
+    "text": "xyl",
+    "fontSize": 40,
+    "lines": [{ "text": "xyl", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Yakiniku restaurant 605": {
+    "text": "Yakiniku restaurant 605",
+    "fontSize": 26,
+    "lines": [{ "text": "Yakiniku restaurant 605", "fontSize": 26, "dy": 8 }]
+  },
+  "Yakitori chicken group": {
+    "text": "Yakitori chicken group",
+    "fontSize": 27,
+    "lines": [{ "text": "Yakitori chicken group", "fontSize": 27, "dy": 8.25 }]
+  },
+  "Yamasuke": {
+    "text": "Yamasuke",
+    "fontSize": 40,
+    "lines": [{ "text": "Yamasuke", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Ymobile": {
+    "text": "Ymobile",
+    "fontSize": 40,
+    "lines": [{ "text": "Ymobile", "fontSize": 40, "dy": 12.5 }]
+  },
+  "Yokohama Kotegaeshi": {
+    "text": "Yokohama Kotegaeshi",
+    "fontSize": 26,
+    "lines": [{ "text": "Yokohama Kotegaeshi", "fontSize": 26, "dy": 8 }]
+  },
+  "Zoff": {
+    "text": "Zoff",
+    "fontSize": 40,
+    "lines": [{ "text": "Zoff", "fontSize": 40, "dy": 12.5 }]
+  }
+}

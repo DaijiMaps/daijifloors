@@ -18,5 +18,10 @@ const renderRenderersTs = (layers: Layer[]) => {
 
 export const handleRenderers = (layers: Layer[], dir: string) => {
   const text = renderRenderersTs(layers)
-  fs.writeFileSync(`${dir}/renderers.ts`, text, 'utf8')
+  try {
+    fs.mkdirSync(`${dir}/floors`)
+  } catch (e) {
+    console.log(e)
+  }
+  fs.writeFileSync(`${dir}/floors/renderers.ts`, text, 'utf8')
 }

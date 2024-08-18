@@ -25,6 +25,11 @@ const renderFloorTsx = (layer: Layer) => {
 export const handleFloors = (layers: Layer[], dir: string) => {
   for (const layer of layers) {
     const text = renderFloorTsx(layer)
-    fs.writeFileSync(`${dir}/floor_${layer.name}.tsx`, text, 'utf8')
+    try {
+      fs.mkdirSync(`${dir}/floors`)
+    } catch (e) {
+      console.log(e)
+    }
+    fs.writeFileSync(`${dir}/floors/floor_${layer.name}.tsx`, text, 'utf8')
   }
 }

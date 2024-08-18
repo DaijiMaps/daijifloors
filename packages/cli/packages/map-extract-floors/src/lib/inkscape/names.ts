@@ -20,5 +20,10 @@ const renderNamesTs = (layers: Layer[]) => {
 
 export const handleNames = (layers: Layer[], dir: string) => {
   const text = renderNamesTs(layers)
-  fs.writeFileSync(`${dir}/names.ts`, text, 'utf8')
+  try {
+    fs.mkdirSync(`${dir}/floors`)
+  } catch (e) {
+    console.log(e)
+  }
+  fs.writeFileSync(`${dir}/floors/names.ts`, text, 'utf8')
 }

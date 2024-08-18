@@ -5,12 +5,12 @@ import * as fs from 'fs'
 const renderAddressesTs = (layers: Layer[]) => {
   const names = layers.map((l) => l.name)
   const doc = Doc.vsep([
+    Doc.text(`import { FloorName } from '../floors/names'`),
     Doc.vsep(
       names.map((n) =>
         Doc.text(`import addresses${n}Json from './addresses_${n}.json'`)
       )
     ),
-    Doc.text(`import { FloorName } from './names'`),
     Doc.text(``),
     Doc.text(`export type Address =`),
     Doc.vsep(names.map((x) => Doc.text(`  | keyof typeof addresses${x}Json`))),
@@ -32,5 +32,10 @@ const renderAddressesTs = (layers: Layer[]) => {
 
 export const handleAddresses = (layers: Layer[], dir: string) => {
   const text = renderAddressesTs(layers)
-  fs.writeFileSync(`${dir}/addresses.ts`, text, 'utf8')
+  try {
+    fs.mkdirSync(`${dir}/addresses`)
+  } catch (e) {
+    console.log(e)
+  }
+  fs.writeFileSync(`${dir}/addresses/addresses.ts`, text, 'utf8')
 }

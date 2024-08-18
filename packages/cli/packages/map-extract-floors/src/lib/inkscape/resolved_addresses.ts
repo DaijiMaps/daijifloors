@@ -29,5 +29,10 @@ const renderResolvedAddresses = (addresses: Addresses) => {
 export const handleResolvedAddrresses = (ast: Root, dir: string) => {
   const resolvedAddresses = saveResolvedAddrresses(ast)
   const text = renderResolvedAddresses(resolvedAddresses)
-  fs.writeFileSync(`${dir}/resolved_addresses.json`, text, 'utf8')
+  try {
+    fs.mkdirSync(`${dir}/addresses`)
+  } catch (e) {
+    console.log(e)
+  }
+  fs.writeFileSync(`${dir}/addresses/resolved_addresses.json`, text, 'utf8')
 }
