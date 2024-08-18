@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { handleAssets } from './lib/inkscape/assets'
+import { handleFacilities } from './lib/inkscape/facilities'
 import { handleFloorLayers } from './lib/inkscape/layers'
 import { handleMarkers } from './lib/inkscape/markers'
 import { handleResolvedAddrresses } from './lib/inkscape/resolved_addresses'
@@ -13,6 +14,7 @@ const handleInkscapeSvg = (ast: Root, dir: string) => {
   handleResolvedAddrresses(ast, dir)
   handleAssets(ast, dir)
   handleMarkers(ast, dir)
+  handleFacilities(ast, dir)
   handleFloorLayers(ast, dir)
 }
 

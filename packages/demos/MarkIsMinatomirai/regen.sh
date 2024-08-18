@@ -16,7 +16,6 @@ addresses/addresses_B1.json
 addresses/addresses_B2.json
 addresses/addresses_B4.json
 addresses/addresses_GL.json
-facilities.json
 floors.json
 header.ts
 locs-wide.json

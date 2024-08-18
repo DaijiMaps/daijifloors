@@ -7,7 +7,7 @@ import { visitParents } from 'unist-util-visit-parents'
 import { Element, Root } from 'xast'
 import { toXml } from 'xast-util-to-xml'
 
-export const saveAssets = (ast: Root): Element[] => {
+const saveAssets = (ast: Root): Element[] => {
   const subtrees: Element[] = []
   visitParents<Root, undefined>(ast, (n) => {
     if (is(n, 'element')) {

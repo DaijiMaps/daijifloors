@@ -3,13 +3,18 @@
   "type": "module",
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
+    "@eslint/js": "^9.9.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
     "eslint": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix",

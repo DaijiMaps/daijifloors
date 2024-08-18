@@ -1,1 +1,1 @@
-export function parse(attribute: any): any;
+export function parse(attribute: unknown): unknown

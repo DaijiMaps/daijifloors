@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ES2015",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
 
     "strict": true,
 
@@ -9,11 +10,6 @@
     "allowJs": true,
     "esModuleInterop": true,
     "exactOptionalPropertyTypes": true,
-    "noEmit": true,
-
-    "jsx": "react",
-    "paths": {
-      "@jutaz/transform-parser": ["./types/@jutaz/transform-parser"]
-    }
+    "noEmit": true
   }
 }
