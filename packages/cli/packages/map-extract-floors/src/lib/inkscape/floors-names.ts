@@ -18,7 +18,7 @@ const renderNamesTs = (layers: Layer[]) => {
   return Doc.render(doc, { style: 'pretty' })
 }
 
-export const handleNames = (layers: Layer[], dir: string) => {
+export const handleFloorNames = (layers: Layer[], dir: string) => {
   const text = renderNamesTs(layers)
   try {
     fs.mkdirSync(`${dir}/floors`)

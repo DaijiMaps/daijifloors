@@ -1,8 +1,8 @@
 import { layerNames } from '../inkscape'
-import { handleAddresses } from './addresses'
-import { handleFloors } from './floors'
-import { handleNames } from './names'
-import { handleRenderers } from './renderers'
+import { handleFloorAddresses } from './floors-addresses'
+import { handleFloors } from './floors-floors'
+import { handleFloorNames } from './floors-names'
+import { handleFloorRenderers } from './floors-renderers'
 import { is } from 'unist-util-is'
 import { visitParents } from 'unist-util-visit-parents'
 import { Element, Root } from 'xast'
@@ -42,8 +42,8 @@ const saveFloorLayers = (ast: Root, layerNames: string[]) => {
 export const handleFloorLayers = (ast: Root, dir: string) => {
   const layers = saveFloorLayers(ast, layerNames)
 
-  handleNames(layers, dir)
-  handleAddresses(layers, dir)
+  handleFloorNames(layers, dir)
+  handleFloorAddresses(layers, dir)
   handleFloors(layers, dir)
-  handleRenderers(layers, dir)
+  handleFloorRenderers(layers, dir)
 }

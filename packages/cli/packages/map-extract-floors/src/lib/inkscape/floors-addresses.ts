@@ -30,7 +30,7 @@ const renderAddressesTs = (layers: Layer[]) => {
   return Doc.render(doc, { style: 'pretty' })
 }
 
-export const handleAddresses = (layers: Layer[], dir: string) => {
+export const handleFloorAddresses = (layers: Layer[], dir: string) => {
   const text = renderAddressesTs(layers)
   try {
     fs.mkdirSync(`${dir}/addresses`)

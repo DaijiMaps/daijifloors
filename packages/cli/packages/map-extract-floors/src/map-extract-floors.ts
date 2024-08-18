@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import { saveAddressesAndPoints, saveFloorLayerNames } from './lib/inkscape'
+import { handleResolvedAddrresses } from './lib/inkscape/addresses-resolved_addresses'
 import { handleAssets } from './lib/inkscape/assets'
 import { handleFacilities } from './lib/inkscape/facilities'
 import { handleFloorLayers } from './lib/inkscape/layers'
 import { handleMarkers } from './lib/inkscape/markers'
-import { handleResolvedAddrresses } from './lib/inkscape/resolved_addresses'
 import { handleViewBox } from './lib/inkscape/viewbox'
 import * as fs from 'fs'
 import { Root } from 'xast'
