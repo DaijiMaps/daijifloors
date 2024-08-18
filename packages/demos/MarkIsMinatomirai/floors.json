@@ -1,0 +1,27 @@
+{
+  "idx": 4,
+  "names": ["5F", "4F", "3F", "2F", "1F", "GL", "B1", "B2", "B4"],
+  "floors": {
+    "B4": {
+      "backgroundColor": "grey"
+    },
+    "B2": {
+      "backgroundColor": "grey"
+    },
+    "B1": {
+      "backgroundColor": "grey"
+    },
+    "GL": {},
+    "1F": {
+      "categories": ["fashion", "lifestyle"],
+      "backgroundColor": "whitesmoke"
+    },
+    "2F": {
+      "categories": ["daily casual"],
+      "backgroundColor": "whitesmoke"
+    },
+    "3F": {},
+    "4F": {},
+    "5F": {}
+  }
+}

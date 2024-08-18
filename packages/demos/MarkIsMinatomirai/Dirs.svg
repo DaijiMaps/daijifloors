@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6"
+   height="6"
+   viewBox="0 0 6 6"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="Dirs.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="128.83333"
+     inkscape:cx="3"
+     inkscape:cy="3"
+     inkscape:window-width="1440"
+     inkscape:window-height="872"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g3748">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3748"
+       inkscape:label="(Dirs)"
+       style="display:inline">
+      <symbol
+         id="Dir_L"
+         inkscape:label="Dir_L">
+        <path
+           style="fill:#000000;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
+           d="M 3,3 4.25,2.25 v 0.5 H 6 v 0.5 H 4.25 v 0.5 z"
+           id="path3750"
+           inkscape:label="1" />
+      </symbol>
+      <symbol
+         id="Dir_U"
+         inkscape:label="Dir_U">
+        <path
+           style="fill:#000000;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
+           d="M 3,3 3.75,4.25 H 3.25 V 6 H 2.75 V 4.25 h -0.5 z"
+           id="path3752"
+           inkscape:label="1"
+           sodipodi:nodetypes="cccccccc" />
+      </symbol>
+      <symbol
+         id="Dir_R"
+         inkscape:label="Dir_R">
+        <path
+           style="fill:#000000;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
+           d="M 3,3 1.75,3.75 V 3.25 H 0 v -0.5 h 1.75 v -0.5 z"
+           id="path3751"
+           inkscape:label="1"
+           sodipodi:nodetypes="cccccccc" />
+      </symbol>
+      <symbol
+         id="Dir_D"
+         inkscape:label="Dir_D">
+        <path
+           style="fill:#000000;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
+           d="M 3,3 2.25,1.75 h 0.5 V 0 h 0.5 v 1.75 h 0.5 z"
+           id="path3754"
+           inkscape:label="1"
+           sodipodi:nodetypes="cccccccc" />
+      </symbol>
+    </g>
+  </g>
+</svg>

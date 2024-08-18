@@ -1,0 +1,5 @@
+<svg>
+  <marker id="Triangle" refX="0" refY="0" orient="auto-start-reverse" markerWidth="4" markerHeight="4" viewBox="-1 -1 2 2" preserveAspectRatio="xMidYMid">
+    <path d="M1,0 l-2,1 v-2 z" fill="context-stroke" stroke="none" />
+  </marker>
+</svg>
