@@ -16,7 +16,8 @@ const handleInkscapeSvg = (ast: Root, dir: string) => {
   saveFloorLayerNames(ast)
 
   handleViewBox(ast, dir)
-  // XXX can't calc `w` (width of bounding box, see address_tree.py:_post_collect_addresses)
+  // XXX can't calc `w` (== width of bounding box)
+  // XXX see address_tree.py:_post_collect_addresses
   // XXX handleAddrresses(ast, dir)
   handleResolvedAddrresses(ast, dir)
   handleAssets(ast, dir)
