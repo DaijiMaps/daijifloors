@@ -27,7 +27,7 @@ const saveAssets = (ast: Root): Element[] => {
     if (is(n, 'element') && n.name === 'g') {
       const id = n.attributes['id']
       if (id) {
-        if (!id.match(/^[A-Z].*$/)) {
+        if (id.match(/^[^A-Z].*$/)) {
           return
         }
         if (id.match(/^XShop.*$/)) {

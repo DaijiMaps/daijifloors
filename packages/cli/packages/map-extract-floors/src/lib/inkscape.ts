@@ -7,7 +7,8 @@ import { Element as XE, Root as XR } from 'xast'
 type Element = HE | HR | XR | XE
 type Root = HR | XR
 
-export type Point = { x: number; y: number; w?: number }
+export type Point = { x: number; y: number }
+export type Circle = Point & { r: number }
 export type Addreesses = Map<string, Point>
 
 const getLabel = (n: Element) => getStringProperty(n, 'inkscape:label')
@@ -36,6 +37,7 @@ export function getPoint(e: Element): Point | null {
       if (x !== null) {
         const p = parseTransformForAddress(x)
         if (p !== null) {
+          // XXX r?
           return p
         }
       }
@@ -47,6 +49,7 @@ export function getPoint(e: Element): Point | null {
         try {
           const x = parseFloat(cx)
           const y = parseFloat(cy)
+          // XXX r?
           return { x, y }
         } catch (e) {
           console.log(e)
