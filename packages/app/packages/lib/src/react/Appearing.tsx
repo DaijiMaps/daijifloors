@@ -26,6 +26,7 @@ export interface ComponentProps<P> {
 }
 
 // passed to component
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ChildProps extends HTMLProps<HTMLElement> {}
 
 export function Appearing<P = HTMLProps<HTMLElement>>(
