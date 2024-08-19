@@ -1,4 +1,4 @@
-import { layerNames } from '../inkscape'
+import { allLayerNames } from '../inkscape'
 import { handleFloorAddresses } from './floors-addresses'
 import { handleFloors } from './floors-floors'
 import { handleFloorNames } from './floors-names'
@@ -40,7 +40,7 @@ const saveFloorLayers = (ast: Root, layerNames: string[]) => {
 }
 
 export const handleFloorLayers = (ast: Root, dir: string) => {
-  const layers = saveFloorLayers(ast, layerNames)
+  const layers = saveFloorLayers(ast, allLayerNames)
 
   handleFloorNames(layers, dir)
   handleFloorAddresses(layers, dir)

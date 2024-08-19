@@ -101,7 +101,7 @@ function buildTransform(n: Element): Point | null {
 export const allAddresses: Map<string, Point> = new Map()
 export const allPoints: Map<string, string[]> = new Map()
 
-export const saveAddressesAndPoints = (ast: Root): void => {
+export const saveAllAddressesAndPoints = (ast: Root): void => {
   visitParents(ast, (e, parents) => {
     if (is(e, 'element')) {
       if (isPoint(e)) {
@@ -129,9 +129,9 @@ export const saveAddressesAndPoints = (ast: Root): void => {
 // - find 'Content' and check the parent
 // - if the parent is layer, save 'Content' tree with the layer name
 
-export const layerNames = new Array<string>()
+export const allLayerNames = new Array<string>()
 
-export const saveFloorLayerNames = (ast: Root) => {
+export const saveAllFloorLayerNames = (ast: Root) => {
   visitParents<Root, undefined>(ast, (n) => {
     if (is(n, 'element') && getName(n) === 'g') {
       const label = getLabel(n)
@@ -140,9 +140,8 @@ export const saveFloorLayerNames = (ast: Root) => {
         // exclude e.g. (Assets)
         label?.match(/[^(]/)
       ) {
-        layerNames.push(label)
+        allLayerNames.push(label)
       }
     }
   })
-  return layerNames
 }

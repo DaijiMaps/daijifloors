@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-import { saveAddressesAndPoints, saveFloorLayerNames } from './lib/inkscape'
+import {
+  saveAllAddressesAndPoints,
+  saveAllFloorLayerNames,
+} from './lib/inkscape'
 //import { handleAddrresses } from './lib/inkscape/addresses-addresses'
 import { handleResolvedAddrresses } from './lib/inkscape/addresses-resolved_addresses'
 import { handleAssets } from './lib/inkscape/assets'
@@ -12,8 +15,8 @@ import { Root } from 'xast'
 import { fromXml } from 'xast-util-from-xml'
 
 const handleInkscapeSvg = (ast: Root, dir: string) => {
-  saveAddressesAndPoints(ast)
-  saveFloorLayerNames(ast)
+  saveAllAddressesAndPoints(ast)
+  saveAllFloorLayerNames(ast)
 
   handleViewBox(ast, dir)
   // XXX can't calc `w` (== width of bounding box)

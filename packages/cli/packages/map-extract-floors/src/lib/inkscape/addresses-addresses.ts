@@ -1,4 +1,4 @@
-import { allAddresses, layerNames, Point } from '../inkscape'
+import { allAddresses, allLayerNames, Point } from '../inkscape'
 import * as fs from 'fs'
 import { Root } from 'xast'
 
@@ -46,7 +46,7 @@ const renderAddresses = (addresses: Addresses) => {
 }
 
 export const handleAddrresses = (ast: Root, dir: string) => {
-  for (const name of layerNames) {
+  for (const name of allLayerNames) {
     const addresses = saveAddrresses(name)
     const text = renderAddresses(addresses)
     try {
