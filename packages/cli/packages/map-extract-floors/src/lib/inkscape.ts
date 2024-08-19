@@ -7,7 +7,7 @@ import { Element as XE, Root as XR } from 'xast'
 type Element = HE | HR | XR | XE
 type Root = HR | XR
 
-export type Point = { x: number; y: number }
+export type Point = { x: number; y: number; w?: number }
 export type Addreesses = Map<string, Point>
 
 const getLabel = (n: Element) => getStringProperty(n, 'inkscape:label')

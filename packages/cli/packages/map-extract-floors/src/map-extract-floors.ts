@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { saveAddressesAndPoints, saveFloorLayerNames } from './lib/inkscape'
+//import { handleAddrresses } from './lib/inkscape/addresses-addresses'
 import { handleResolvedAddrresses } from './lib/inkscape/addresses-resolved_addresses'
 import { handleAssets } from './lib/inkscape/assets'
 import { handleFacilities } from './lib/inkscape/facilities'
@@ -15,7 +16,8 @@ const handleInkscapeSvg = (ast: Root, dir: string) => {
   saveFloorLayerNames(ast)
 
   handleViewBox(ast, dir)
-  // XXX handleAddresses() - addresses/addresses_XXX.json
+  // XXX can't calc `w` (width of bounding box, see address_tree.py:_post_collect_addresses)
+  // XXX handleAddrresses(ast, dir)
   handleResolvedAddrresses(ast, dir)
   handleAssets(ast, dir)
   handleMarkers(ast, dir)

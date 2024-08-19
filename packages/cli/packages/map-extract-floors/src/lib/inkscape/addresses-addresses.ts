@@ -7,10 +7,11 @@ class Addresses extends Map<string, Point> {}
 const saveAddrresses = (name: string) => {
   const addresses = new Addresses()
   for (const [k, v] of allAddresses.entries()) {
-    if (k.match(`/^A${name}-.*$/`)) {
+    if (k.match(`^A${name}-.*$`)) {
       addresses.set(k, v)
     }
   }
+  console.log('saveAddresses:', name, '->', addresses)
   return addresses
 }
 
@@ -25,7 +26,11 @@ const renderAddresses = (addresses: Addresses) => {
           'x' in mv &&
           typeof mv.x === 'number' &&
           'y' in mv &&
-          typeof mv.y === 'number'
+          typeof mv.y === 'number' &&
+          // XXX can't calc `w` (== width of bounding box)
+          // XXX see address_tree.py:_post_collect_addresses
+          'w' in mv &&
+          typeof mv.w === 'number'
         ) {
           m[mk] = mv
         } else {
@@ -41,10 +46,6 @@ const renderAddresses = (addresses: Addresses) => {
 }
 
 export const handleAddrresses = (ast: Root, dir: string) => {
-  // XXX for each floor names
-  // XXX collect matching addresses (allAddresses)
-  // XXX and write addresses/addresses_XXX.json
-
   for (const name of layerNames) {
     const addresses = saveAddrresses(name)
     const text = renderAddresses(addresses)
