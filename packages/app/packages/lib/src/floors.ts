@@ -23,8 +23,8 @@ export function getFloorIdx(floorName: string): number {
 export function getFloorInfo(idx: number): FloorInfo {
   const names = getFloorNames()
   const name = names[idx]
-  const prevIdx = idx > names.length - 1 ? undefined : idx + 1
-  const nextIdx = idx === 0 ? undefined : idx - 1
+  const prevIdx = idx === 0 ? undefined : idx - 1
+  const nextIdx = idx > names.length - 1 ? undefined : idx + 1
   const prevName = prevIdx === undefined ? undefined : names[prevIdx]
   const nextName = nextIdx === undefined ? undefined : names[nextIdx]
   const categories = floorsOps.floors[name].categories
