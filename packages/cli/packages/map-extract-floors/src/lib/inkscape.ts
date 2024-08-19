@@ -1,35 +1,26 @@
 import { parseTransformForAddress } from './transform.js'
-import { Element as HE, Root as HR } from 'hast'
 import { is } from 'unist-util-is'
 import { visitParents } from 'unist-util-visit-parents'
-import { Element as XE, Root as XR } from 'xast'
-
-type Element = HE | HR | XR | XE
-type Root = HR | XR
+import { Element, Root } from 'xast'
 
 export type Point = { x: number; y: number }
 export type Circle = Point & { r: number }
 export type Addreesses = Map<string, Point>
 
-const getLabel = (n: Element) => getStringProperty(n, 'inkscape:label')
-const getTransform = (n: Element) => getStringProperty(n, 'transform')
+const getLabel = (n: Element | Root) => getStringProperty(n, 'inkscape:label')
+const getTransform = (n: Element | Root) => getStringProperty(n, 'transform')
 
-function getName(n: Element): string | null {
+function getName(n: Element | Root): string | null {
   const a = 'name' in n ? n?.name : undefined
   return typeof a === 'string' ? a : null
 }
 
-function getStringProperty(n: Element, p: string): string | null {
-  const a =
-    'properties' in n
-      ? n?.properties?.[p]
-      : 'attributes' in n
-        ? n?.attributes?.[p]
-        : undefined
+function getStringProperty(n: Element | Root, p: string): string | null {
+  const a = 'attributes' in n ? n?.attributes?.[p] : undefined
   return typeof a === 'string' ? a : null
 }
 
-export function getPoint(e: Element): Point | null {
+export function getPoint(e: Element | Root): Point | null {
   const name = getName(e)
   if (name !== null) {
     if (name === 'use') {
@@ -79,7 +70,10 @@ export function addressBuilder(a: Addreesses, n: Element, parents: Element[]) {
   }
 }
 
-export function buildAddress(n: Element, parents: Element[]): string | null {
+export function buildAddress(
+  n: Element,
+  parents: (Element | Root)[]
+): string | null {
   const suffix = getLabel(n)
   if (suffix === null) {
     return null
@@ -107,7 +101,7 @@ function buildTransform(n: Element): Point | null {
 export const allAddresses: Map<string, Point> = new Map()
 export const allPoints: Map<string, string[]> = new Map()
 
-export const saveAddressesAndPoints = (ast: XR): void => {
+export const saveAddressesAndPoints = (ast: Root): void => {
   visitParents(ast, (e, parents) => {
     if (is(e, 'element')) {
       if (isPoint(e)) {
