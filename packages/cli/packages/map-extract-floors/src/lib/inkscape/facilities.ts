@@ -1,4 +1,4 @@
-import { allPoints } from '../inkscape'
+import { allPoints } from './addresses-addresses'
 import * as fs from 'fs'
 import { Root } from 'xast'
 

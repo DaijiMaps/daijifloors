@@ -1,6 +1,5 @@
-import { allLayerNames } from '../inkscape'
 import { handleFloorAddresses } from './floors-addresses'
-import { handleFloors } from './floors-floors'
+import { allLayerNames, handleFloors } from './floors-floors'
 import { handleFloorNames } from './floors-names'
 import { handleFloorRenderers } from './floors-renderers'
 import { is } from 'unist-util-is'

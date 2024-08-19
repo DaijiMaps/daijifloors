@@ -1,6 +1,36 @@
-import { allAddresses, allLayerNames, Point } from '../inkscape'
+import { buildAddress, getPoint, isPoint, Point } from '../inkscape'
+import { allLayerNames } from './floors-floors'
 import * as fs from 'fs'
+import { is } from 'unist-util-is'
+import { visitParents } from 'unist-util-visit-parents'
 import { Root } from 'xast'
+
+export const allAddresses: Map<string, Point> = new Map()
+export const allPoints: Map<string, string[]> = new Map()
+
+export const saveAllAddressesAndPoints = (ast: Root): void => {
+  visitParents(ast, (e, parents) => {
+    if (is(e, 'element')) {
+      if (isPoint(e)) {
+        const a = buildAddress(e, parents)
+        const p = getPoint(e)
+        if (a !== null && p !== null) {
+          allAddresses.set(a, p)
+          const s = `${p.x},${p.y}`
+          let xs = allPoints.get(s)
+          if (xs === undefined) {
+            xs = []
+          }
+          xs.push(a)
+          allPoints.set(s, xs)
+        }
+      }
+    }
+  })
+
+  console.log('allAddresses:', allAddresses)
+  console.log('allPoints:', allPoints)
+}
 
 class Addresses extends Map<string, Point> {}
 

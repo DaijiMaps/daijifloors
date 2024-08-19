@@ -7,7 +7,9 @@ import { visitParents } from 'unist-util-visit-parents'
 import { Element, Root } from 'xast'
 import { toXml } from 'xast-util-to-xml'
 
-const saveAssets = (ast: Root): Element[] => {
+export const allAssets: Element[] = []
+
+export const saveAllAssets = (ast: Root) => {
   const subtrees: Element[] = []
   visitParents<Root, undefined>(ast, (n) => {
     if (is(n, 'element')) {
@@ -22,7 +24,6 @@ const saveAssets = (ast: Root): Element[] => {
     return []
   }
   const subtree = subtrees[0]
-  const assets: Element[] = []
   visitParents<Element, undefined>(subtree, (n) => {
     if (is(n, 'element') && n.name === 'g') {
       const id = n.attributes['id']
@@ -33,11 +34,10 @@ const saveAssets = (ast: Root): Element[] => {
         if (id.match(/^XShop.*$/)) {
           return
         }
-        assets.push(n)
+        allAssets.push(n)
       }
     }
   })
-  return assets
 }
 
 const renderAssets = (assets: Element[]) => {
@@ -61,7 +61,7 @@ const renderAssets = (assets: Element[]) => {
 }
 
 export const handleAssets = (ast: Root, dir: string) => {
-  const assets = saveAssets(ast)
+  const assets = allAssets
   const text = renderAssets(assets)
   fs.writeFileSync(`${dir}/assets.tsx`, text, 'utf8')
 }

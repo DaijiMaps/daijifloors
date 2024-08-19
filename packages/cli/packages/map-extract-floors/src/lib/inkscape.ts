@@ -1,6 +1,4 @@
 import { parseTransformForAddress } from './transform.js'
-import { is } from 'unist-util-is'
-import { visitParents } from 'unist-util-visit-parents'
 import { Element, Root } from 'xast'
 
 export type Point = { x: number; y: number }
@@ -98,50 +96,6 @@ function buildTransform(n: Element): Point | null {
   return a ? parseTransformForAddress(a) : null
 }
 
-export const allAddresses: Map<string, Point> = new Map()
-export const allPoints: Map<string, string[]> = new Map()
-
-export const saveAllAddressesAndPoints = (ast: Root): void => {
-  visitParents(ast, (e, parents) => {
-    if (is(e, 'element')) {
-      if (isPoint(e)) {
-        const a = buildAddress(e, parents)
-        const p = getPoint(e)
-        if (a !== null && p !== null) {
-          allAddresses.set(a, p)
-          const s = `${p.x},${p.y}`
-          let xs = allPoints.get(s)
-          if (xs === undefined) {
-            xs = []
-          }
-          xs.push(a)
-          allPoints.set(s, xs)
-        }
-      }
-    }
-  })
-
-  console.log('allAddresses:', allAddresses)
-  console.log('allPoints:', allPoints)
-}
-
 // XXX REFACTOR
 // - find 'Content' and check the parent
 // - if the parent is layer, save 'Content' tree with the layer name
-
-export const allLayerNames = new Array<string>()
-
-export const saveAllFloorLayerNames = (ast: Root) => {
-  visitParents<Root, undefined>(ast, (n) => {
-    if (is(n, 'element') && getName(n) === 'g') {
-      const label = getLabel(n)
-      if (
-        getStringProperty(n, 'inkscape:groupmode') === 'layer' &&
-        // exclude e.g. (Assets)
-        label?.match(/[^(]/)
-      ) {
-        allLayerNames.push(label)
-      }
-    }
-  })
-}
