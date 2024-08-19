@@ -10,7 +10,9 @@ export function parseTransformForAddress(transform: string): Point | null {
     if (p.length === 1) {
       const t = p[0]
       if (t.type === 'translate' && t.z === null) {
-        return { x: t.x?.value ?? 0, y: t.y?.value ?? 0 }
+        if (t.x?.unit === null && t.y?.unit === null) {
+          return { x: t.x?.value ?? 0, y: t.y?.value ?? 0 }
+        }
       }
     }
   }
