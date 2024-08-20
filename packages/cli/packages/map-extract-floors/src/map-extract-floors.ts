@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { generateAllBoundingBoxes, parseAllBoundingBoxes } from './lib/inkscape'
+import { generateBoundingBoxCSV, parseBoundingBoxCSV } from './lib/inkscape'
 import { handleAddrresses } from './lib/inkscape/addresses-addresses'
 import { saveAllAddressesAndPoints } from './lib/inkscape/addresses-addresses'
 import { handleResolvedAddrresses } from './lib/inkscape/addresses-resolved_addresses'
@@ -35,8 +35,8 @@ const main = async (args: string[]) => {
   const infile = resolve(args[0])
   const outdir = resolve(args.length === 2 ? args[1] : '.')
 
-  const bb = generateAllBoundingBoxes(infile, outdir)
-  parseAllBoundingBoxes(bb)
+  const bb = generateBoundingBoxCSV(infile, outdir)
+  parseBoundingBoxCSV(bb)
 
   const svg = await fs.readFileSync(infile)
   const ast = fromXml(svg)
