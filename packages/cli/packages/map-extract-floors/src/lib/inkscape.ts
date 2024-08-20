@@ -1,5 +1,5 @@
+import { allBoundingBoxes } from './inkscape/bb.js'
 import { parseTransformForAddress } from './transform.js'
-import { spawnSync } from 'node:child_process'
 import { Element, Root } from 'xast'
 
 export type Point = { x: number; y: number }
@@ -25,47 +25,43 @@ function getStringProperty(n: Element | Root, p: string): string | null {
 
 export function getPoint(e: Element | Root): Circle | null {
   const name = getName(e)
-  if (name !== null) {
-    if (name === 'use') {
-      const x = getTransform(e)
-      if (x !== null) {
-        const p = parseTransformForAddress(x)
-        if (p !== null) {
-          // XXX r?
-          const href = getHref(e)
-          if (href) {
-            const id = href.replace(/^#/, '')
-            const bb = allBoundingBoxes.get(id)
-            if (bb) {
-              const r = bb?.width / 2
-              return { ...p, r }
-            }
+  if (name === 'use') {
+    const x = getTransform(e)
+    if (x !== null) {
+      const p = parseTransformForAddress(x)
+      if (p !== null) {
+        const href = getHref(e)
+        if (href) {
+          const id = href.replace(/^#/, '')
+          const bb = allBoundingBoxes.get(id)
+          if (bb !== undefined) {
+            const r = bb.width / 2
+            return { ...p, r }
           }
         }
       }
     }
-    if (name === 'circle' || name === 'ellipse') {
-      const cx = getStringProperty(e, 'cx')
-      const cy = getStringProperty(e, 'cy')
-      if (cx !== null && cy !== null) {
-        try {
-          const x = parseFloat(cx)
-          const y = parseFloat(cy)
-          if (name === 'circle') {
-            const r = parseFloat(getStringProperty(e, 'r') || '')
-            if (typeof r === 'number') {
-              return { x, y, r }
-            }
-          } else {
-            const rx = parseFloat(getStringProperty(e, 'rx') || '')
-            const ry = parseFloat(getStringProperty(e, 'ry') || '')
-            if (typeof rx === 'number' && typeof ry === 'number') {
-              return { x, y, r: (rx + ry) / 2 }
-            }
+  } else if (name === 'circle' || name === 'ellipse') {
+    const cx = getStringProperty(e, 'cx')
+    const cy = getStringProperty(e, 'cy')
+    if (typeof cx === 'string' && typeof cy === 'string') {
+      try {
+        const x = parseFloat(cx)
+        const y = parseFloat(cy)
+        if (name === 'circle') {
+          const r = parseFloat(getStringProperty(e, 'r') || '')
+          if (typeof r === 'number') {
+            return { x, y, r }
           }
-        } catch (e) {
-          console.log(e)
+        } else {
+          const rx = parseFloat(getStringProperty(e, 'rx') || '')
+          const ry = parseFloat(getStringProperty(e, 'ry') || '')
+          if (typeof rx === 'number' && typeof ry === 'number') {
+            return { x, y, r: (rx + ry) / 2 }
+          }
         }
+      } catch (e) {
+        console.log(e)
       }
     }
   }
@@ -116,52 +112,4 @@ export function checkAddress(address: string): boolean {
 function buildTransform(n: Element): Point | null {
   const a = getTransform(n)
   return a ? parseTransformForAddress(a) : null
-}
-
-// Inkscape bounding-box generation (-S)
-// format: <id>,<x>,<y>,<w>,<h>
-
-interface Box {
-  // XXX same as ViewBox
-  x: number
-  y: number
-  width: number
-  height: number
-}
-
-export const allBoundingBoxes = new Map<string, Box>()
-
-export const parseBoundingBoxCSV = (content: string): void => {
-  content
-    .split(/\n/)
-    .filter((s) => s !== '')
-    .filter((s) => s.match(/^[A-Z]/))
-    .map((s) => {
-      const values = s.split(/,/)
-      if (values.length === 5) {
-        try {
-          const nums = values.slice(1).map(parseFloat)
-          allBoundingBoxes.set(values[0], {
-            x: nums[0],
-            y: nums[1],
-            width: nums[2],
-            height: nums[3],
-          })
-        } catch (e) {
-          console.log(e)
-        }
-      }
-      return s
-    })
-  console.log('bb:', allBoundingBoxes)
-}
-
-export const generateBoundingBoxCSV = (
-  infile: string,
-  outdir: string
-): string => {
-  const res = spawnSync('inkscape', ['-S', infile], {
-    cwd: outdir,
-  })
-  return res.stdout.toString()
 }
