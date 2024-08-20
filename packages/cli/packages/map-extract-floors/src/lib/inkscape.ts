@@ -1,4 +1,5 @@
 import { parseTransformForAddress } from './transform.js'
+import { spawnSync } from 'node:child_process'
 import { Element, Root } from 'xast'
 
 export type Point = { x: number; y: number }
@@ -96,6 +97,50 @@ function buildTransform(n: Element): Point | null {
   return a ? parseTransformForAddress(a) : null
 }
 
-// XXX REFACTOR
-// - find 'Content' and check the parent
-// - if the parent is layer, save 'Content' tree with the layer name
+// Inkscape bounding-box generation (-S)
+// format: <id>,<x>,<y>,<w>,<h>
+
+interface Box {
+  // XXX same as ViewBox
+  x: number
+  y: number
+  width: number
+  height: number
+}
+
+export const allBoundingBoxes = new Map<string, Box>()
+
+export const parseInkscapeBoundingBoxAll = (content: string): void => {
+  content
+    .split(/\n/)
+    .filter((s) => s !== '')
+    .filter((s) => s.match(/^[A-Z]/))
+    .map((s) => {
+      const values = s.split(/,/)
+      if (values.length === 5) {
+        try {
+          const nums = values.slice(1).map(parseFloat)
+          allBoundingBoxes.set(values[0], {
+            x: nums[0],
+            y: nums[1],
+            width: nums[2],
+            height: nums[3],
+          })
+        } catch (e) {
+          console.log(e)
+        }
+      }
+      return s
+    })
+  console.log('bb:', allBoundingBoxes)
+}
+
+export const generateBoundingBoxes = (
+  infile: string,
+  outdir: string
+): string => {
+  const res = spawnSync('inkscape', ['-S', infile], {
+    cwd: outdir,
+  })
+  return res.stdout.toString()
+}
