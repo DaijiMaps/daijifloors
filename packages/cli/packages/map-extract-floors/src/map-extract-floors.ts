@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-//import { handleAddrresses } from './lib/inkscape/addresses-addresses'
 import {
   generateBoundingBoxes,
   parseInkscapeBoundingBoxAll,
 } from './lib/inkscape'
+import { handleAddrresses } from './lib/inkscape/addresses-addresses'
 import { saveAllAddressesAndPoints } from './lib/inkscape/addresses-addresses'
 import { handleResolvedAddrresses } from './lib/inkscape/addresses-resolved_addresses'
 import { handleAssets, saveAllAssets } from './lib/inkscape/assets'
@@ -23,9 +23,7 @@ const handleInkscapeSvg = (ast: Root, dir: string) => {
   saveAllAddressesAndPoints(ast)
 
   handleViewBox(ast, dir)
-  // XXX can't calc `w` (== width of bounding box)
-  // XXX see address_tree.py:_post_collect_addresses
-  // XXX handleAddrresses(ast, dir)
+  handleAddrresses(ast, dir)
   handleResolvedAddrresses(ast, dir)
   handleAssets(ast, dir)
   handleMarkers(ast, dir)

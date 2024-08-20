@@ -14,12 +14,16 @@ function getName(n: Element | Root): string | null {
   return typeof a === 'string' ? a : null
 }
 
+function getHref(n: Element | Root): string | null {
+  return getStringProperty(n, 'xlink:href') || getStringProperty(n, 'href')
+}
+
 function getStringProperty(n: Element | Root, p: string): string | null {
   const a = 'attributes' in n ? n?.attributes?.[p] : undefined
   return typeof a === 'string' ? a : null
 }
 
-export function getPoint(e: Element | Root): Point | null {
+export function getPoint(e: Element | Root): Circle | null {
   const name = getName(e)
   if (name !== null) {
     if (name === 'use') {
@@ -28,7 +32,15 @@ export function getPoint(e: Element | Root): Point | null {
         const p = parseTransformForAddress(x)
         if (p !== null) {
           // XXX r?
-          return p
+          const href = getHref(e)
+          if (href) {
+            const id = href.replace(/^#/, '')
+            const bb = allBoundingBoxes.get(id)
+            if (bb) {
+              const r = bb?.width / 2
+              return { ...p, r }
+            }
+          }
         }
       }
     }
@@ -39,11 +51,20 @@ export function getPoint(e: Element | Root): Point | null {
         try {
           const x = parseFloat(cx)
           const y = parseFloat(cy)
-          // XXX r?
-          return { x, y }
+          if (name === 'circle') {
+            const r = parseFloat(getStringProperty(e, 'r') || '')
+            if (typeof r === 'number') {
+              return { x, y, r }
+            }
+          } else {
+            const rx = parseFloat(getStringProperty(e, 'rx') || '')
+            const ry = parseFloat(getStringProperty(e, 'ry') || '')
+            if (typeof rx === 'number' && typeof ry === 'number') {
+              return { x, y, r: (rx + ry) / 2 }
+            }
+          }
         } catch (e) {
           console.log(e)
-          return null
         }
       }
     }

@@ -1,11 +1,11 @@
-import { buildAddress, getPoint, isPoint, Point } from '../inkscape'
+import { buildAddress, Circle, getPoint, isPoint, Point } from '../inkscape'
 import { allLayerNames } from './floors-floors'
 import * as fs from 'fs'
 import { is } from 'unist-util-is'
 import { visitParents } from 'unist-util-visit-parents'
 import { Root } from 'xast'
 
-export const allAddresses: Map<string, Point> = new Map()
+export const allAddresses: Map<string, Circle> = new Map()
 export const allPoints: Map<string, string[]> = new Map()
 
 export const saveAllAddressesAndPoints = (ast: Root): void => {
@@ -48,7 +48,7 @@ const saveAddrresses = (name: string) => {
 const renderAddresses = (addresses: Addresses) => {
   const replacer = (k: unknown, v: unknown) => {
     if (v instanceof Map) {
-      const m: { [k: string]: Point } = {}
+      const m: { [k: string]: Point & { w: number } } = {}
       for (const [mk, mv] of v.entries()) {
         if (
           typeof mk === 'string' &&
@@ -57,12 +57,10 @@ const renderAddresses = (addresses: Addresses) => {
           typeof mv.x === 'number' &&
           'y' in mv &&
           typeof mv.y === 'number' &&
-          // XXX can't calc `w` (== width of bounding box)
-          // XXX see address_tree.py:_post_collect_addresses
-          'w' in mv &&
-          typeof mv.w === 'number'
+          'r' in mv &&
+          typeof mv.r === 'number'
         ) {
-          m[mk] = mv
+          m[mk] = { x: mv.x, y: mv.y, w: mv.r * 2 }
         } else {
           // XXX
         }
@@ -76,7 +74,7 @@ const renderAddresses = (addresses: Addresses) => {
 }
 
 export const handleAddrresses = (ast: Root, dir: string) => {
-  for (const name of allLayerNames) {
+  for (const name of allLayerNames.filter((n) => n.match(/^[^()]/))) {
     const addresses = saveAddrresses(name)
     const text = renderAddresses(addresses)
     try {
