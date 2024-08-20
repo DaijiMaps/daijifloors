@@ -131,7 +131,7 @@ interface Box {
 
 export const allBoundingBoxes = new Map<string, Box>()
 
-export const parseInkscapeBoundingBoxAll = (content: string): void => {
+export const parseAllBoundingBoxes = (content: string): void => {
   content
     .split(/\n/)
     .filter((s) => s !== '')
@@ -156,7 +156,7 @@ export const parseInkscapeBoundingBoxAll = (content: string): void => {
   console.log('bb:', allBoundingBoxes)
 }
 
-export const generateBoundingBoxes = (
+export const generateAllBoundingBoxes = (
   infile: string,
   outdir: string
 ): string => {
