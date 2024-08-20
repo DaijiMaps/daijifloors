@@ -3,7 +3,7 @@ import { is } from 'unist-util-is'
 import { visitParents } from 'unist-util-visit-parents'
 import { Root } from 'xast'
 
-interface ViewBox {
+export interface Box {
   x: number
   y: number
   width: number
@@ -14,7 +14,7 @@ export class ParseError {
   readonly _tag = 'ParseError'
 }
 
-const parseViewBox = (s: string): null | ViewBox => {
+const parseViewBox = (s: string): null | Box => {
   const xs = s.split(/ +/).map((x) => parseFloat(x))
   if (xs.length !== 4) {
     return null
@@ -32,8 +32,8 @@ const parseViewBox = (s: string): null | ViewBox => {
   }
 }
 
-const saveViewBox = (ast: Root): ViewBox[] => {
-  const foundViewBoxes: ViewBox[] = []
+const saveViewBox = (ast: Root): Box[] => {
+  const foundViewBoxes: Box[] = []
   visitParents<Root, undefined>(ast, (n, parents) => {
     if (
       parents.length === 1 &&
@@ -53,7 +53,7 @@ const saveViewBox = (ast: Root): ViewBox[] => {
   return foundViewBoxes
 }
 
-const renderViewBox = (viewBox: ViewBox) => {
+const renderViewBox = (viewBox: Box) => {
   return JSON.stringify(viewBox, null, 2)
 }
 
