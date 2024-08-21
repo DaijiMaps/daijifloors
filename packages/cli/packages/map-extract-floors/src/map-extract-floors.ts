@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import { generateBoundingBoxCSV, parseBoundingBoxCSV } from './lib/inkscape'
 import { handleAddrresses } from './lib/inkscape/addresses-addresses'
 import { saveAllAddressesAndPoints } from './lib/inkscape/addresses-addresses'
 import { handleResolvedAddrresses } from './lib/inkscape/addresses-resolved_addresses'
 import { handleAssets, saveAllAssets } from './lib/inkscape/assets'
+import { generateBoundingBoxCSV, parseBoundingBoxCSV } from './lib/inkscape/bb'
 import { handleFacilities } from './lib/inkscape/facilities'
 import { saveAllFloorLayerNames } from './lib/inkscape/floors-floors'
 import { handleFloorLayers } from './lib/inkscape/layers'
