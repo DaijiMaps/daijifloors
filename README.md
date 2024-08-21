@@ -1,4 +1,4 @@
-<img src="./icon-preview.png">
+<img src="./icon.png">
 
 ---
 
