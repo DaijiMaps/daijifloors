@@ -11,4 +11,4 @@ export type AddressPoint = [Address, Point]
 export type Addresses = Partial<Record<Address, Point>>
 
 // address -> shop name
-export type ResolvedAddresses = Record<string, string>
+export type ResolvedAddresses = Record<Address, string>
