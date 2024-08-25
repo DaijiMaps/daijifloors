@@ -1,29 +1,14 @@
 import { getFloorIdx, getFloorNameByIdx } from './floors'
 import { addressesOps, AddressesOps, initCb } from './ops/addresses'
+import { Address, Addresses, AddressPoint, Point } from './types/address'
 import { FloorName } from './types/floor'
 import { pipe } from 'effect'
 import * as RR from 'effect/Record'
 import Flatbush from 'flatbush'
 
-type Address = string
-
 initCb.ref = (ops: AddressesOps) => {
   floorAddressBufs.ref = pipe(ops.floorAddresses, RR.map(makeAddrressBufs))
 }
-
-////
-
-export type { Address }
-
-export interface Point {
-  x: number
-  y: number
-  w: number
-}
-
-export type AddressPoint = [Address, Point]
-
-export type Addresses = Partial<Record<Address, Point>>
 
 // XXX work-around `Partial vs Object.entries' problem
 export const addressEntries = (a: Addresses): AddressPoint[] => {
@@ -131,10 +116,3 @@ export function addressToPointIdx(
               }
       )
 }
-
-//
-// ResolvedAddress
-//
-
-// address -> shop name
-export type ResolvedAddresses = Record<string, string>

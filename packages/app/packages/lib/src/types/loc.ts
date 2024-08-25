@@ -1,4 +1,4 @@
-import { Point } from '../addresses'
+import { Point } from './address'
 
 export interface LocLine {
   text: string

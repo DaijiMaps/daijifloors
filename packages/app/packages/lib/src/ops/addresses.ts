@@ -1,4 +1,4 @@
-import type { Addresses, ResolvedAddresses } from '../addresses'
+import { Addresses, ResolvedAddresses } from '../types/address'
 import type { FloorName } from '../types/floor'
 
 export interface AddressesOps {

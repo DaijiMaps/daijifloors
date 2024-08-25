@@ -1,11 +1,7 @@
-import {
-  Address,
-  SearchAddressResult,
-  addressEntries,
-  searchAddress,
-} from './addresses'
+import { SearchAddressResult, addressEntries, searchAddress } from './addresses'
 import { addressesOps } from './ops/addresses'
 import { facilitiesOps } from './ops/facilities'
+import { Address } from './types/address'
 import { Facility, FacilityInfo, FacilityLinks } from './types/facility'
 import { FloorName, FloorNames } from './types/floor'
 

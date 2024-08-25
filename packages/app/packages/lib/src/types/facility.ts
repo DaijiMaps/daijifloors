@@ -1,4 +1,4 @@
-import { Address, Point } from '../addresses'
+import { Address, Point } from './address'
 import { DetailContext } from './detail'
 import { FloorNames } from './floor'
 

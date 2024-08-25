@@ -1,5 +1,6 @@
-import { Address, addressToFloorName } from '../addresses'
+import { addressToFloorName } from '../addresses'
 import { paramsOps } from '../ops/params'
+import { Address } from '../types/address'
 import { FacilityInfo } from '../types/facility'
 import { FloorContext, FloorName } from '../types/floor'
 import './FacilityDetailContent.css'

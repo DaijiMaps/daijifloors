@@ -1,4 +1,4 @@
-import { Address } from './addresses'
+import { Address } from './types/address'
 import { AppMode } from './types/app'
 import { TimerChange } from './types/timer'
 import { Params } from './types/url-params'
