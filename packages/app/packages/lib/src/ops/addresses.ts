@@ -16,9 +16,11 @@ export const installAddressesOps = (
 ) => {
   addressesOps.floorAddresses = ops.floorAddresses
   addressesOps.resolvedAddresses = ops.resolvedAddresses
-  initCb.ref(ops)
+  for (const cb of installCbs) {
+    cb(ops)
+  }
 }
 
-export const initCb: { ref: (ops: AddressesOps) => void } = {
-  ref: () => {},
-}
+type InstallCb = (ops: AddressesOps) => void
+
+export const installCbs: InstallCb[] = []

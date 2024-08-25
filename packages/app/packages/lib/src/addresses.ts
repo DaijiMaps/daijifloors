@@ -1,14 +1,14 @@
 import { getFloorIdx, getFloorNameByIdx } from './floors'
-import { addressesOps, AddressesOps, initCb } from './ops/addresses'
+import { addressesOps, AddressesOps, installCbs } from './ops/addresses'
 import { Address, Addresses, AddressPoint, Point } from './types/address'
 import { FloorName } from './types/floor'
 import { pipe } from 'effect'
 import * as RR from 'effect/Record'
 import Flatbush from 'flatbush'
 
-initCb.ref = (ops: AddressesOps) => {
+installCbs.push((ops: AddressesOps) => {
   floorAddressBufs.ref = pipe(ops.floorAddresses, RR.map(makeAddrressBufs))
-}
+})
 
 // XXX work-around `Partial vs Object.entries' problem
 export const addressEntries = (a: Addresses): AddressPoint[] => {
