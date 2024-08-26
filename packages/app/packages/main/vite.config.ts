@@ -1,14 +1,17 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import mkcert from 'vite-plugin-mkcert'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        main: `index.html`,
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '')
+  return {
+    base: mode === 'production' ? env.BASE_URL : `/`,
+    build: {
+      rollupOptions: {
+        input: {
+          main: `index.html`,
+        },
       },
     },
-  },
-  plugins: [mkcert()],
+    plugins: [mkcert()],
+  }
 })

@@ -1,9 +1,13 @@
+NAME=$( basename ${PWD} )
+
 app_main=@daijimaps/daijifloors-app-main
 app_main_dir=${PWD}/../../app/packages/main
 app_lib=@daijimaps/daijifloors-app-lib
 app_lib_dir=${PWD}/../../app/packages/lib
 
 do_build() {
+  [ -f .env.production ] || printf 'BASE_URL=/demos/%s/\nVITE_APP_TITLE=%s\n' "${NAME}" "Daiji Floors for ${NAME}" >.env.production
+
   [ -f package.json ] || cp ../node_modules/${app_main}/package.json .
   # XXX edit package.json
 
