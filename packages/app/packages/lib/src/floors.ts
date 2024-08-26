@@ -20,27 +20,38 @@ export function getFloorIdx(floorName: string): number {
   return -1
 }
 
-export function getFloorInfo(idx: number): FloorInfo {
+function getName(idx: number) {
   const names = getFloorNames()
   const name = names[idx]
-  const prevIdx = idx === 0 ? undefined : idx - 1
-  const nextIdx = idx > names.length - 1 ? undefined : idx + 1
-  const prevName = prevIdx === undefined ? undefined : names[prevIdx]
-  const nextName = nextIdx === undefined ? undefined : names[nextIdx]
+  return {
+    name,
+    prev:
+      idx === 0
+        ? undefined
+        : {
+            idx: idx - 1,
+            name: names[idx - 1],
+          },
+    next:
+      idx > names.length - 1
+        ? undefined
+        : {
+            idx: idx + 1,
+            name: names[idx + 1],
+          },
+  }
+}
+
+export function getFloorInfo(idx: number): FloorInfo {
+  const { name, prev, next } = getName(idx)
   const categories = floorsOps.floors[name].categories
   const shopNames = floorsOps.floors[name].shopNames
   const backgroundColor = floorsOps.floors[name].backgroundColor
 
   return {
     name,
-    prev: {
-      idx: prevIdx,
-      name: prevName,
-    },
-    next: {
-      idx: nextIdx,
-      name: nextName,
-    },
+    prev,
+    next,
     categories,
     shopNames,
     backgroundColor,
